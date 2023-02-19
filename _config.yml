@@ -18,20 +18,32 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Ivanchuck Ivan
+github: l3r8yJ
+linkedin: l3r8y
 email: l3r8y@duck.com
+
+author: Ivan Ivanchuck
+email: l3r8y@duck.com
+location: Russia
+skin: daylight
+disqus: l3r8y_blog
+math: true
+
 description: >- # this means to ignore newlines until "baseurl:"
   Hi! My name is Ivanchuck Ivan, i'm a Java developer, very existed in open source, OOP and R&D.
+
 baseurl: "l3r8yj.github.io" # the subpath of your site, e.g. /blog
 url: "https://www.l3r8y.ru/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: L3r8y
-github_username:  l3r8yJ
+
 
 # Build settings
-theme: minima
+# remote_theme: ngzhio/jekyll-theme-hamilton
+theme: jekyll-theme-hamilton
 plugins:
   - jekyll-feed
-
+  - jekyll-remote-theme
+  - jekyll-admin
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

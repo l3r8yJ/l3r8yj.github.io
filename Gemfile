@@ -18,6 +18,12 @@ gem "faraday-retry"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "github-pages", "~> 228"
+  gem "jekyll-admin"
+end
+
+group :jekyll_themes do
+  gem "jekyll-theme-persephone"
+  gem 'jekyll-theme-hamilton', '~> 4.0'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
