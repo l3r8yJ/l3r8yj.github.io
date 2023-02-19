@@ -22,8 +22,8 @@ title: Your awesome title
 email: l3r8y@duck.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi! My name is Ivanchuck Ivan, i'm a Java developer, very existed in open source, OOP and R&D.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://l3r8y.ru/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "l3r8y" # the subpath of your site, e.g. /blog
+url: "https://www.l3r8y.ru/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: L3r8y
 github_username:  l3r8yJ
 
