@@ -22,7 +22,6 @@ group :jekyll_plugins do
 end
 
 group :jekyll_themes do
-  gem "jekyll-theme-persephone"
   gem 'jekyll-theme-hamilton', '~> 4.0'
 end
 
