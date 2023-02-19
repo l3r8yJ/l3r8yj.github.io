@@ -38,13 +38,12 @@ url: "https://www.l3r8y.ru/" # the base hostname & protocol for your site, e.g. 
 
 
 # Build settings
-# remote_theme: ngzhio/jekyll-theme-hamilton
-theme: jekyll-theme-hamilton
+remote_theme: ngzhio/jekyll-theme-hamilton
+# theme: jekyll-theme-hamilton
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
   - jekyll-admin
-  - jekyll-theme-hamilton
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
