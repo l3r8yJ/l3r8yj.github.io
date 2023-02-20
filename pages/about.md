@@ -1,16 +1,13 @@
 ---
+title: About me
 layout: page
-title: About
-permalink: /about/
+permalink: "/about/"
 ---
 
-Jekyll Paper is a simple Jekyll theme, and it is aim to helping you to create your own blog by the easiest way.
+I'm Ivan Ivanchuck(Russian: Иван Иванчук), aspiring software developer.
 
-You can find more information in [Jekyll Paper][jekyll-paper] or [Jekyll Paper for Github][jekyll-paper-github]. If you have any questions or suggestions, you can contact me in [Jekyll Paper Issues][jekyll-paper-issues], [Jekyll Paper for Github Issues][jekyll-paper-github-issues] or send email to [me](mailto:i@ghosind.com). 
+Well, as a **software developer**, I **have to write code**, and I [*write*](https://github.com/l3r8yJ). As you can see I write preferably in [*Java*](https://en.wikipedia.org/wiki/Java_(programming_language)), sometimes in [*Ruby*](https://en.wikipedia.org/wiki/Ruby_(programming_language)), [*PHP*](https://en.wikipedia.org/wiki/PHP). Also in [*Rust*](https://en.wikipedia.org/wiki/Rust_(programming_language)), but so far my knowledge is too small to say that I am a Rust programmer.
 
-Wish you enjoying your blog life!
+<br/>
 
-[jekyll-paper]: https://github.com/ghosind/Jekyll-Paper
-[jekyll-paper-github]: https://github.com/ghosind/Jekyll-Paper-Github
-[jekyll-paper-issues]: https://github.com/ghosind/Jekyll-Paper/issues
-[jekyll-paper-github-issues]: https://github.com/ghosind/Jekyll-Paper-Github/issues
+I am currently studying at university. I'm majoring in software engineering, I would not say that the knowledge I'm getting here is in any way relevant, but that's a topic for a separate conversation.
