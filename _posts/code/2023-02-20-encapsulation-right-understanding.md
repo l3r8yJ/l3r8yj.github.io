@@ -1,8 +1,8 @@
 ---
 title: A proper understanding of encapsulation.
 layout: post
-date: '2023-02-20'
-last_modified_at: '2023-02-20'
+date: '2022-09-03'
+last_modified_at: '2022-09-03'
 categories:
 - oop
 - encapsulation
