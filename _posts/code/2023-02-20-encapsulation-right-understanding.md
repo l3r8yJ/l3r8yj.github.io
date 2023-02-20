@@ -51,7 +51,9 @@ public class Coefficient implements EquationElement {
 <br/>
 *Here we see the class of the `Discriminante` used to solve the quadratic equation:*
 <br/>
-```
+
+
+```java
 public class Discriminante implements EquationElement {
   
   private final Coefficient a, b, c;
