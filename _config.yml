@@ -1,65 +1,49 @@
-# Welcome to Jekyll!
+# Welcome to Jekyll Paper for Github
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# This is the configuration file for your blog, please change these items after forked.
 
-title: Ivanchuck Ivan
-github: l3r8yJ
-linkedin: l3r8y
+title: Ivan Ivanchuck | Blog
 email: l3r8y@duck.com
-
-author: Ivan Ivanchuck
-email: l3r8y@duck.com
-location: Russia
-skin: daylight
-disqus: l3r8y_blog
-math: true
-
+name: Ivan Ivanchuck
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! My name is Ivanchuck Ivan, i'm a Java developer, very existed in open source, OOP and R&D.
+  Here my small blog about sowftware.
+keywords: [programming, java, ruby, oop, open-source]
+baseurl: '' # the subpath of your site, e.g. /`blog
+url: 'https://www.l3r8y.ru' # the base hostname & protocol for your site, e.g. http://example.com
+domain: 'www.l3r8y.ru' # the domain name for your site, e.g. example.com
+language: en
 
-baseurl: "l3r8yj.github.io" # the subpath of your site, e.g. /blog
-url: "https://www.l3r8y.ru/" # the base hostname & protocol for your site, e.g. http://example.com
+analytics: G-XTETTK84JF
 
+comments: true
+disqus: l3r8y-blog
 
-# Build settings
-remote_theme: ngzhio/jekyll-theme-hamilton
-# theme: jekyll-theme-hamilton
+mathjax: true # Math support
+diagram: true # Diagrams support
+
+paginate: 25
+paginate_path: '/page:num/'
+
+permalink: /:year/:month/:day/:title
+
+sass:
+  sass_dir: _sass
+  style: expanded # compressed, compact, expanded or compressed
+
+markdown: kramdown
+
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-admin
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
