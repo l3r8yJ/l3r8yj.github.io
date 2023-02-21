@@ -10,4 +10,4 @@ Well, as a **software developer**, I **have to write code**, and I [write](https
 
 <br/>
 
-I am currently studying at university. I'm majoring in software engineering, I would not say that the knowledge I'm getting here is in any way relevant, but that's a topic for a separate conversation.
+I study at the university. I'm majoring in software engineering. I would not say that the knowledge I'm getting here is in any way relevant, but that's a topic for a separate conversation.
