@@ -87,7 +87,7 @@ Gem::Specification.new do |s|
 end
 ```
 
-6) It looks like we are ready to go. now create a test release and run all the commands you want to use.
+6) Looks like we're ready to go. Now create a test issue and run all the commands you want to use.
 
 <div id="rust">
   <h2>Here it goes for Rust project.</h2>
