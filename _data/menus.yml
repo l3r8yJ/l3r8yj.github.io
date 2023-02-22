@@ -9,3 +9,5 @@
 
 - title: 'My pets'
   url: 'pets'
+- title: 'Resume'
+  url: 'assets/resume.pdf'
