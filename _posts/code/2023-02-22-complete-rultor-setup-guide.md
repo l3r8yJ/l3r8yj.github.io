@@ -27,7 +27,7 @@ Well, today i'm going to review two cases:
 2) Then you need to create an `API key` with `push` permission. Do this [here](https://rubygems.org/profile/api_keys).
 
 
-3) You have to go and create an `private` repository with `rubygems.yml` file:
+3) You have to go and create a `private` repository with `rubygems.yml` file:
 ```yaml
 :rubygems_api_key: # your key
 :backtrace: true | false
@@ -41,13 +41,13 @@ friends:
 This configuration allows `rultor` to share these secrets with the repositories you have listed in this file.
 
 
-4) Now you have to go in your main repository and create an `.rultor.yml`:
+4) Now you have to go to your main repository and create a `.rultor.yml`:
 ```yaml
 architect:
   - your_nickname
 assets:
-  # Here important thing, in my repo config pleaced in `assets/` folder.
-  # If you just put your config directly path gonna be like `l3r8yJ/repo#rubygems.yml`
+  # Here is important thing, in my repo config placed in `assets/` folder.
+  # If you just put your config directly, path is gonna be like `l3r8yJ/repo#rubygems.yml`
   rubygems.yml: your_nickname/your_repo#path_to_config/rubygems.yml
 install: |
   pdd -f /dev/null
@@ -103,7 +103,7 @@ The first three steps will be very similar.
 token = "plase_your_token"
 ```
 
-3) Go to your main repository. Here we too create a `.rultor.yml`:
+3) Go to your main repository. Here we also create a `.rultor.yml`:
 ```yaml
 architect:
   - your_nickname
@@ -111,8 +111,8 @@ docker:
   # you can create your own container.
   image: yegor256/rultor-image:1.13.0
 assets:
-  # Here important thing, in my repo config pleaced in `assets/` folder.
-  # If you just put your config directly path gonna be like `l3r8yJ/repo#crates-credentials
+  # Here is important thing, in my repo config placed in `assets/` folder.
+  # If you just put your config directly, path is gonna be like `l3r8yJ/repo#crates-credentials
   credentials: your_nickname/your_repo#path_to_config/crates-credentials
 install: |
   pdd --file=/dev/null
@@ -143,6 +143,6 @@ version = "0.0.0"
 
 5) Nice, now we ready to go!
 
-Thank you for your attention! If you find a mistake or something similar here. If you just have a question. Then write in the comments!
+Thank you for your attention! If you find a mistake or something like this, if you just have a question, then write in the comments!
 
 
