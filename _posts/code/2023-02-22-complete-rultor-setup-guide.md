@@ -9,7 +9,7 @@ categories:
 tags: blog-post
 ---
 ## Let's see...
-Well, if you are reading this, you probably know what [Rultor](https://doc.rultor.com/) is. But for some reason you don't understand how to set it up.
+Well, if you are reading this, you probably know what [Rultor](https://doc.rultor.com/) is. But for some reason you don't understand how to set it up. I also have a [template repository](https://github.com/l3r8yJ/elegant) in case I start a new project, it's already a bit set up. You can fork it and use.
 
 Well, today i'm going to review two cases:
   - [Ruby](#ruby) project, `@merge` and `@release`
