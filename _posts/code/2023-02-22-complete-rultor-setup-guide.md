@@ -4,8 +4,8 @@ layout: post
 date: '2023-02-22'
 last_modified_at: '2023-02-22'
 categories:
-- oop
-- encapsulation
+- ci/cd
+- rultor
 tags: blog-post
 ---
 ## Let's see...
