@@ -6,6 +6,7 @@ last_modified_at: '2023-02-22'
 categories:
 - ci/cd
 - rultor
+- guide
 tags: blog-post
 ---
 ## Let's see...

@@ -9,7 +9,18 @@
 
 @charset "utf-8";
 
+.pre {
+  font-family: 'CMU Typewriter Text', monospace;
+  font-style: normal;
+  src: url(/assets/fonts/cmunbtl.ttf);
+}
+
 .highlight {
+  
+  font-family: 'CMU Typewriter Text', monospace;
+  font-style: normal;
+  src: url(/assets/fonts/cmunbtl.ttf);
+
   table {
     td {
       padding: 5px;
@@ -38,43 +49,43 @@
 
   // Any keyword
   .k {
-    font-weight: bold;
+    font-weight: normal;
     color: #c71585;
   }
 
   // Keywords that are constants
   .kc {
-    font-weight: bold;
+    font-weight: normal;
     color: #c71585;
   }
 
   // Keywords used for variable declaration (e.g. var in javascript)
   .kd {
-    font-weight: bold;
+    font-weight: normal;
     color: #c71585;
   }
 
   // Keywords used for namespace declarations
   .kn {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
   // Keywords that aren't really keywords
   .kp {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
   // Keywords which are reserved (such as end in Ruby)
   .kr {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
   // Keywords wich refer to a type id (such as int in C)
   .kt {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
@@ -90,42 +101,42 @@
 
   // Builtin names which are available in the global namespace
   .nb {
-    font-weight: bold;
+    font-weight: normal;
   }
 
   // Builtin names that are implicit (such as self in Ruby)
   .bp {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
   // For class declaration
   .nc {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
   // For constants
   .no {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
   // For decorators in languages such as Python or Java
   .nd {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
   // Token for entitites such as &nbsp; in HTML
   .ni {
-    font-weight: bold;
+    font-weight: normal;
     color: #555;
   }
 
   // Exceptions and errors (e.g. ArgumentError in Ruby)
   .ne {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
@@ -141,13 +152,13 @@
 
   // For label names
   .nl {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
   // Token for namespaces
   .nn {
-    font-weight: bold;
+    font-weight: normal;
     color: #808;
   }
 
@@ -158,31 +169,31 @@
 
   // Tag mainly for markup such as XML or HTML
   .nt {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
   // Token for variables
   .nv {
-    font-weight: bold;
+    font-weight: normal;
     color: #008;
   }
 
   // Token for class variables (e.g. @@var in Ruby)
   .vc {
-    font-weight: bold;
+    font-weight: normal;
     color: #008;
   }
 
   // For global variables (such as $LOAD_PATH in Ruby)
   .vg {
-    font-weight: bold;
+    font-weight: normal;
     color: #008;
   }
 
   // Token for instance variables (such as @var in Ruby)
   .vi {
-    font-weight: bold;
+    font-weight: normal;
     color: #008;
   }
 
@@ -193,144 +204,144 @@
 
   // Date literals
   .ld {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // String literals
   .s {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // String enclosed in backticks
   .sb {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Token type for single characters
   .sc {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Documentation strings (such as in Python)
   .sd {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Double quoted strings
   .s2 {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Escaped sequences in strings
   .se {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // For "heredoc" strings (e.g. in Ruby)
   .sh {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // For interpoled part in strings (e.g. in Ruby)
   .si {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Token type for any other strings (for example %q{foo} string constructs in Ruby)
   .sx {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Regular expressions literals
   .sr {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Single quoted strings
   .s1 {
-    font-weight: bold;
+    font-weight: normal;
     color: #800;
   }
 
   // Symbols (such as :foo in Ruby)
   .ss {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Any number literal (if not further defined)
   .m {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Float numbers
   .mf {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Hexadecimal numbers
   .mh {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Integer literals
   .mi {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Long interger literals
   .il {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Octal literals
   .mo {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Hexadecimal literals
   .mx {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Binary literals
   .mb {
-    font-weight: bold;
+    font-weight: normal;
     color: #f696db;
   }
 
   // Operators (commonly +, -, /, *)
   .o {
-    font-weight: bold;
+    font-weight: normal;
     color: #157c83;
   }
 
   // Word operators (e.g. and)
   .ow {
-    font-weight: bold;
+    font-weight: normal;
     color: #157c83;
   }
 
   // Punctuation which is not an operator
-  .p {
+  .p {  
     color: #0f6f75;
   }
 
@@ -349,7 +360,7 @@
   // Preprocessor comments such as <% %> in ERb
   .cp {
     font-style: italic;
-    font-weight: bold;
+    font-weight: normal;
     color: #a52a2a;
   }
 
@@ -383,13 +394,13 @@
   // Token value as an error message
   .gr {
     font-style: italic;
-    font-weight: bold;
+    font-weight: normal;
     color: #c00;
   }
 
   // Token value as a headline
   .gh {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
@@ -405,18 +416,18 @@
 
   // Marked as a command prompt
   .gp {
-    font-weight: bold;
+    font-weight: normal;
     color: #2279a5;
   }
 
   // Mark the token value as bold (for rst lexer)
   .gs {
-    font-weight: bold;
+    font-weight: normal;
   }
 
   // Marked as a subheadline
   .gu {
-    font-weight: bold;
+    font-weight: normal;
     color: #ffb000;
   }
 
@@ -439,7 +450,7 @@
 
   // Keywords used for variable
   .kv {
-    font-weight: bold;
+    font-weight: normal;
     color: #c71585;
   }
 
