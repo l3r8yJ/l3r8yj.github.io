@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+code {
+  font-family: 'CMU Typewriter Text', monospace;
+  font-style: normal;
+  src: url(/assets/fonts/cmunbtl.ttf);
+}
+
 .highlight > pre,
 pre.highlight {
   line-height: 18px;
