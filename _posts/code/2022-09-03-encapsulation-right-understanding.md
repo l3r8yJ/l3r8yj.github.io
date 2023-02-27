@@ -1,5 +1,5 @@
 ---
-title: A proper understanding of encapsulation.
+title: A proper understanding of encapsulation
 layout: post
 date: '2022-09-03'
 last_modified_at: '2022-09-03'

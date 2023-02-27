@@ -1,5 +1,5 @@
 ---
-title: Сomplete (almost) guide to setup Rultor.
+title: Сomplete (almost) guide to setup Rultor
 layout: post
 date: '2023-02-22'
 last_modified_at: '2023-02-22'
