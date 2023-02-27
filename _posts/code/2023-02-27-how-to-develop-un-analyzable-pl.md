@@ -13,7 +13,7 @@ So, today I want to tell you how you should develop a programming language that 
 
 
 A small disclaimer for those who are against static analysis and code quality control tools. 
-  > It is [proved mathematically](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) that static analysis can never be 100% true. *That is, it is impossible to write a program that understands how another program will execute without first executing it.*
+  > It is [proved mathematically](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) that static analysis can never be 100% true. *This is impossible to write a program that understands how another program will execute without first executing it.*
 
 However, this **does not** mean that static analysis is useless or that it cannot be effective in finding bugs and vulnerabilities in software. 
 
