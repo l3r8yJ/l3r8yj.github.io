@@ -74,7 +74,7 @@ Well, when I talk about mutability in this context, I mean reassigning the same 
 File f = new File("foo.txt");
 f.doSmth();
 f.setPath("bar.txt");
-f.writeSomething(content);
+f.write(content);
 ```
 Changing statements multiple times makes analysis difficult, because keeping track of execution flows becomes a complex task. We must teach our tool to remember when and how each statement changes.
 
@@ -83,7 +83,7 @@ If we can't create setters, the code might look like this:
 final File f1 = new File("foo.txt");
 final File f2 = new File("bar.txt");
 f1.doSmth();
-f2.writeSomething(content);
+f2.write(content);
 ```
 Now, for each file we have only one way of sequence
 This piece of code is much easier to analyze, isn't it?
@@ -144,14 +144,14 @@ interface Request {
 class RqSafe implements Request { 
   @Override
   Response act() {
-    // safe implementation
+    return this.doSafe(); // safe implementation
   }
 }
 
 class RqUnsafe implements Request { 
   @Override
   Response act() {
-    // unsafe implementation
+    return this.doUnsafe(); // unsafe implementation
   }
 }
 
