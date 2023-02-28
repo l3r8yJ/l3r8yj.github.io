@@ -85,7 +85,7 @@ final File f2 = new File("bar.txt");
 f1.doSmth();
 f2.write(content);
 ```
-Now, for each file we have only one way of sequence
+Now, for each file we have only one way of sequence.
 This piece of code is much easier to analyze, isn't it?
 
 <br/>
