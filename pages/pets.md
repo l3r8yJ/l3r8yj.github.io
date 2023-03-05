@@ -14,6 +14,8 @@ permalink: "/pets/"
 
 <img inline-image alt="logo" src="https://github.com/l3r8yJ/phi-reducer/blob/master/docs/imgs/phi-reducer.png?raw=true" height="130px" /> <a href="https://www.l3r8y.ru/phi-reducer/">**φ-reducer**</a> (Coq) This project is experimental. Some magic with [φ-calculus](https://arxiv.org/abs/2111.13384).
 
+<img inline-image alt="logo" src="https://raw.githubusercontent.com/l3r8yJ/sa-tan/8f6e97d0287f4f922b6cd685548490a48e26c496/s8an.svg" height="140px" /> <a href="https://www.l3r8y.ru/sa-tan/">**Sa-tan**</a> (Java) Maven plugin to check mutability.
+
 <br/>
 
 ## Be glad if you will submit a pull request!
