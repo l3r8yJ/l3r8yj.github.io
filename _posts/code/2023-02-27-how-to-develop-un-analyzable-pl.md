@@ -2,7 +2,7 @@
 title: How to develop un-analyzable PL 
 layout: post
 date: '2023-02-27'
-last_modified_at: '2022-02-27'
+last_modified_at: '2022-03-05'
 categories:
 - static analysis
 tags: blog-post
@@ -14,7 +14,9 @@ tags: blog-post
 ### Introduction
 
 So, today I want to tell you how you should develop a programming language that will never surrender to a static analyzer. After all, we all know that static analysis is bad, quality control is for those who cannot write clean code, and all unit tests should be written by junior programmers! If you agree with at least one point, write me an e-mail, or better in comments.  I must convince myself that such people exist.
-
+  > "*Increased focus on software quality is the most effective way to increase programmer productivity.*"
+  >
+  > &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Code Complete, Steve McConnel
 
 A small disclaimer for those who are against static analysis and code quality control tools. 
   > It is [proved mathematically](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) that static analysis can never be 100% true. *This is impossible to write a program that understands how another program will execute without first running it.*
