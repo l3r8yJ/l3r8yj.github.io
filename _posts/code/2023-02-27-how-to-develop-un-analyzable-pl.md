@@ -196,4 +196,13 @@ It's all about trade-off.
 
 Thank you, I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.
 
+<br/>
 
+<script id="diffblog-plugin-script" async="false" src="https://diff.blog/static/js/diffblog_plugin_v1.js"></script> 
+<script>
+        document.getElementById("diffblog-plugin-script").addEventListener("load", function () {
+            DiffBlog(
+                "hu9gfrs2o3ad55qj792h5gmoybcnf637qtfaacufw2awbpkspo"
+            );
+        });
+</script>
