@@ -11,7 +11,7 @@ Well, as a software developer, I _have to write code_, and I [write](https://git
 My main activity is contributing to open source projects: [**Objectionary**](https://github.com/objectionary), [**EO-CQRS**](https://github.com/eo-cqrs). Also have [my own](/pets/). Perhaps you will also find them interesting. Therefore, you are always welcome to send pull request!
 <br/>
 
-I study at the university. I'm majoring in software engineering. I would not say that the knowledge I'm getting here is in any way relevant, but that's a topic for a separate conversation.
+I study at the university. I'm majoring in software engineering.
 
 ![pic](/assets/images/about.png)
 
