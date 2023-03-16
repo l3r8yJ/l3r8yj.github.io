@@ -12,7 +12,7 @@ baseurl: '' # the subpath of your site, e.g. /`blog
 url: 'https://www.l3r8y.ru' # the base hostname & protocol for your site, e.g. http://example.com
 domain: 'www.l3r8y.ru' # the domain name for your site, e.g. example.com
 language: en
-
+excerpt_separator: <!--more-->
 analytics: G-XTETTK84JF
 
 comments: true

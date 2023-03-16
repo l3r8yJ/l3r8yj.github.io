@@ -12,7 +12,7 @@ tags: blog-post
 ![pic](https://media.licdn.com/dms/image/D4E12AQGvsgwIo0TIQQ/article-cover_image-shrink_423_752/0/1662032433004?e=1682553600&v=beta&t=3C_8V2XIMeBd6rNX4kHLhGr5cdnfZJLnVhgm9EEWVwk)
 
 ## Let's see...
-
+<!--more-->
 I remember when I started studying OOP and came across the definition of encapsulation, it looked like this:
 
 

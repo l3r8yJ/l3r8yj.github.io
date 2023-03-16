@@ -10,6 +10,7 @@ tags: blog-post
 ---
 ## Let's see...
 [<img style="float: left; margin-right: 10px;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffreepngimg.com%2Fdownload%2Fapple%2F58687-logo-computer-apple-icons-free-hd-image.png&f=1&nofb=1&ipt=6b67f1d4e3a1dd672bb36a6d0c6dfbcba5cf3bffb681e8823bfb4c5612f25d31&ipo=images" width="130"/>](https://www.apple.com) <br/>
+<!--more-->
 Well, at first I want to start with the most important thing for writing code, obviously the computer. Here my eye fell on Mac, or rather [late 2021 MacBook Air with M1 chip](https://support.apple.com/kb/SP825?locale=en_US). It is quiet, or to be exact, silent, close to the power I need, and also has a terminal in the OS. I have the lowest configuration with 8Gb RAM and 256Gb SSD. I don't understand why some programmers use Windows laptops, I can easily imagine writing code using a laptop with Linux on it, but Windows seems so tricky and weird to me.
 <br/>
 

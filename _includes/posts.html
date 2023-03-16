@@ -2,7 +2,10 @@
   {% for post in paginator.posts %}
   <div class="posts-list-item">
     <span class="posts-list-item-name float-left">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <b>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </b>
+        <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
     </span>
     <span class="posts-list-item-date float-right">
       {{ post.date | date: '%Y-%m-%d' }}
