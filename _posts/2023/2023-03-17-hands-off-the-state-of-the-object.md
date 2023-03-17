@@ -8,6 +8,8 @@ categories:
 tags: oop setters immutable java maven
 ---
 
+<img height="500" title="TMNT in Java" alt="TMNT in Java" src="/assets/images/mutants.png">
+
 How often do you see the creation of an object through configuration? What does that mean? Right, we have a mutable state of the object. Of course, this does not happen without the involvement of setters.
 
 What's wrong with setters, you may ask. Well, absolutely **anything**! Enough of the fact that, for the human brain, the alterability of things is a very unnatural thing. Yes, I know that there are no things in our world that are completely immutable. But it's a bit of a tricky thing for our brains.
