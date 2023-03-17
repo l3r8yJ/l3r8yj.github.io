@@ -118,7 +118,7 @@ As a small summary, I see a lot of pluses in this approach, which seem to me mor
 
 ## How to avoid setters?
 
-I think the easiest way – is to trust the robots. You don't have to control yourself or anything like that. Just write the code, and when something goes wrong, the robot will just break your arm and tell you that you did something wrong or horrible. That's why I created [this](https://www.l3r8y.ru/sa-tan) guy. So far it only works with [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) projects that use [Maven](https://en.wikipedia.org/wiki/Apache_Maven).
+I think the easiest way – is to trust the robots. You don't have to control yourself or anything like that. Just write the code, and when something goes wrong, the robot will just break your arm and tell you that you did something wrong or horrible. That's why I created [this](https://www.l3r8y.ru/sa-tan) guy. So far it only works with [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) projects.
 
 Is just looks into your code and if it sees a mutation of an object, it just fails the build. **It won't even let you build bad code!**
 
