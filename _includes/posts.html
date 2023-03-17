@@ -7,7 +7,6 @@
         </b>
         <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
         <a style="text-decoration: none; " href="{{ site.baseurl }}{{ post.url }}"> <i>Continue...</i> </a>
-        <br/>
     </span>
     <span class="posts-list-item-date float-right">
       {{ post.date | date: '%Y-%m-%d' }}

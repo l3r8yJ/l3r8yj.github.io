@@ -14,8 +14,6 @@ How often do you see the creation of an object through configuration? What does 
 
 What's wrong with setters, you may ask. Well, absolutely **everything**! The fact that, for the human brain, the mutability of objects is a very unnatural thing is enough to prove it. Yes, I know that there are no things in our world that are completely immutable. But it's a bit of a tricky thing for our brains.
 
-<br/>
-
 For guys who need proof:
 
   - Piaget, J. (1952). The origins of intelligence in children. New York: International Universities Press.
@@ -27,18 +25,13 @@ For guys who need proof:
   - Scholl, B. J., & Tremoulet, P. D. (2000). Perceptual causality and animacy. Trends in Cognitive Sciences, 4(8), 299–309.
 
 
-<br/>
-
-
 Now that we have dealt with the physiological side of the question, let's move on to the practical one.
 
-<br/>
 
 ## Why is it completely unusable?
 
-Let's start with the object-oriented approach.
-
 Take a look at this Java class.
+
 ```java
 
 class RequestToApi {
@@ -114,8 +107,6 @@ Now we treat the object as someone smart to rely on. In case we need to change t
 
 As a small summary, I see a lot of pluses in this approach, which seem to me more important than the disadvantages. You may also want to check out the books written on the subject. The first one is "[Object Thinking](http://davewest.us/product/object-thinking/)" by David West and the second one is "[Elegant Objects](https://www.yegor256.com/elegant-objects.html)", v1-v2, by Yegor Bugayenko.
 
-<br/>
-
 ## How to avoid setters?
 
 I think the easiest way – is to trust the robots. You don't have to control yourself or anything like that. Just write the code, and when something goes wrong, the robot will just break your arm and tell you that you did something wrong or horrible. That's why I created [this](https://www.l3r8y.ru/sa-tan) guy. So far it only works with [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) projects.
@@ -124,11 +115,10 @@ Is just looks into your code and if it sees a mutation of an object, it just fai
 
 Now that you're fascinated, I'll show you how to work with it.
 
-<br/>
-
 ### Diving
 
 All you have to do is to add it to your `pom.xml`:
+
 ```
 
 <build>
@@ -152,5 +142,3 @@ All you have to do is to add it to your `pom.xml`:
 ```
 
 Thank you, I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.
-
-<br/>

@@ -9,14 +9,12 @@ categories:
 - guide
 tags: blog-post
 ---
-## Let's see...
+![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.javacodegeeks.com%2Fwp-content%2Fuploads%2F2014%2F09%2Flogo1.png&f=1&nofb=1&ipt=bd2c2dc11f87b075dcaf2e4fccde0de7ce57dada3e9a898ba3fda7439453cfc3&ipo=images)
 Well, if you are reading this, you probably know what [Rultor](https://doc.rultor.com/) is. But for some reason you don't understand how to set it up. I also have a [template repository](https://github.com/l3r8yJ/elegant) in case I start a new project, it's already a bit set up. You can fork it and use.
 
 Well, today i'm going to review two cases:
   - [Ruby](#ruby) project, `@merge` and `@release`
   - [Rust](#rust) project, `@merge` and `@release`
-
-<br/>
 
 <div id="ruby">
   <h2>Let's begin with configuration for Ruby project.</h2>
