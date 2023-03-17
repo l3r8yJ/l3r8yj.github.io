@@ -109,7 +109,7 @@ req
   .response(); 
 
 ```
-Here, on the other hand, we always set the object at "birth," its immutable essence. After which we say.
+Here, on the other hand, we always set the object at "birth", its immutable essence. After which we say.
 
   > "Please give me a response from the server."
 
