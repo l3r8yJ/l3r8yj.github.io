@@ -59,6 +59,9 @@ Just typical code example.
 RequestToApi req = new RequestToApi();
 req.setUri(new URI("https://someawesomeapi.com"))
 req.makeResponse();
+// some code
+req.setUri(new URI("https://otherawesomapi.com"))
+req.makeResponse();
 
 ```
 What do we see here? <b>Obviously</b>, this is a violation of the OOP-principle called [encapsulation](https://www.l3r8y.ru/2022/09/03/encapsulation-right-understanding). We literally take an object and change it from the inside, completely changing its behavior! Just imagine if tomorrow someone puts something unsafe in `uri`.
@@ -70,7 +73,7 @@ The second thing is that we don't treat our object as a smart object. We just te
 We don't treat it as someone smart who can do the work for us. We treat it as an empty shell that has some function for the data we have.
 
 
-I think more right way to do this looks like this.
+I think a more proper and object-oriented way to do this is as follows.
 ```java
 
 class RequestToApi {
@@ -84,10 +87,19 @@ class RequestToApi {
     return new RequestToApi(uri);
   }
 
-  public Response response() {
-    return new JdkRequest(this.uri).response();
+  public JsonResponse response() {
+    return new JsonReponse(new JdkRequest(this.uri).response());
   }
 }
+
+```
+The use of this class is much better now.
+```java
+
+final RequestToApi req = new RequestToApi(new URI("https://someawesomeapi.com"));
+req.response();
+req.updated(new URI("https://otherawesomapi.com")); // New object created!
+req.response();
 
 ```
 
