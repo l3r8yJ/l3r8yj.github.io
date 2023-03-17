@@ -83,12 +83,14 @@ class RequestToApi {
     this.uri = uri;
   }
 
-  public updated(final URI uri) {
+  public RequestToApi updated(final URI uri) {
     return new RequestToApi(uri);
   }
 
   public JsonResponse response() {
-    return new JsonReponse(new JdkRequest(this.uri).response());
+    return new JsonReponse(
+      new JdkRequest(this.uri).response()
+    );
   }
 }
 
@@ -96,16 +98,26 @@ class RequestToApi {
 The use of this class is much better now.
 ```java
 
-final RequestToApi req = new RequestToApi(new URI("https://someawesomeapi.com"));
+final RequestToApi req = new RequestToApi(
+  new URI("https://someawesomeapi.com")
+);
 req.response();
-req.updated(new URI("https://otherawesomapi.com")); // New object created!
-req.response();
+req
+  .updated(new URI("https://otherawesomapi.com"))// New object created!
+  .response(); 
 
 ```
+Here, on the other hand, we always set the object at "birth," its immutable essence. After which we say.
+
+  > "Please give me a response from the server."
+
+Now we treat the object as someone smart to rely on. In case we need to change the server, we simply create a new object through `updated()`. This way, those who worked with the object before won't be affected by the change, because it's immutable. As a nice bonus, such a class will be **thread-safe**!
+
+As a small summary, I see a lot of pluses in this approach, which seem to me more important than the negatives. You may also want to check out the books written on the subject. The first one is "[Object Thinking](http://davewest.us/product/object-thinking/)" by David West and the second one is "[Elegant Objects](https://www.yegor256.com/elegant-objects.html)", v1-v2, by Yegor Bygayenko.
 
 <br/>
 
-## How to avoid it?
+## How to avoid setters?
 
 I think the easiest way – is to trust the robots. You don't have to control yourself or anything like that. Just write the code, and when something goes wrong, the robot will just break your arm and tell you that you did something wrong or horrible. That's why I created [this](https://www.l3r8y.ru/sa-tan) guy. So far it only works with [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) projects that use [Maven](https://en.wikipedia.org/wiki/Apache_Maven).
 
