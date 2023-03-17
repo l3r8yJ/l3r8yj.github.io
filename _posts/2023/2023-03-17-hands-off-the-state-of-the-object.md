@@ -152,4 +152,6 @@ All you have to do is add it to your `pom.xml`:
 
 ```
 
+Thank you, I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.
+
 <br/>
