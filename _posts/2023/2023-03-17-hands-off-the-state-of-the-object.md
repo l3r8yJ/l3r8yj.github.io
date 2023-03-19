@@ -2,7 +2,7 @@
 title: Hands off the state of the object
 layout: post
 date: '2023-03-17'
-last_modified_at: '2023-03-17'
+last_modified_at: '2023-03-19'
 categories:
 - oop
 tags: oop setters immutable java maven
@@ -141,4 +141,59 @@ All you have to do is to add it to your `pom.xml`:
 
 ```
 
-Thank you, I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.
+Now I'll give you some examples:
+
+```java
+
+class IAmGoodBoy {
+  private final String name;
+
+  IAmGoodBoy(final String name) {
+    this.name = name;
+  }
+}
+
+```
+
+As you can see this class `IAmGoodBoy` is good, there is no reason to send a warning here.
+
+```java
+
+class IAmBadBoy {
+  private String name;
+
+  public void rename(String name) {
+    this.name = name;
+  }
+}
+
+```
+
+But this guy `IAmBadBoy` – a real devil in the flesh. That's why `Sa-tan` will say this.
+```bash
+
+.../IAmBadBoy.java': Method 'IAmBadBoy#rename' has wrong method signature,
+because method body contains an assignment, setters violates OOP principles
+
+```
+
+But if life has forced you to have bad classes in your code, you can annotate them.
+
+```java
+
+@Mutable
+class IAmBadBoy {
+  private String name;
+
+  public void rename(String name) {
+    this.name = name;
+  }
+}
+
+```
+
+Now `Sa-tan` won't say anything about it!
+
+<br/>
+
+*Thank you, I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.*
