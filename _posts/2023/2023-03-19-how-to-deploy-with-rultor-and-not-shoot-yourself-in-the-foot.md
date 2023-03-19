@@ -4,7 +4,7 @@ layout: post
 date: '2023-03-19'
 last_modified_at: '2023-03-19'
 categories:
-- guide ci/cd rultor
+- guide, ci/cd, rultor
 tags: ci/cd rultor guide howto
 ---
 
