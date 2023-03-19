@@ -14,21 +14,21 @@ tags: ci/cd rultor guide howto
 
 This guy is trying to set up a CI/CD pipeline. Please don't distract him.
 
-This blog post is in addition to [previous](/2023/02/22/complete-rultor-setup-guide) post for Java projects to publishing to [Maven Central](https://en.wikipedia.org/wiki/Apache_Maven). Well, if you are reading this, I assume you know about [Rultor](https://www.rultor.com/) and are trying to setup `@rultor release, tag is '1.0.0'`. But for some reason you can't. I'm here to help you deal with your helplessness. So let's begin...
+This blog post is an addition to the [previous](/2023/02/22/complete-rultor-setup-guide) post for Java projects that will be published in [Maven Central](https://en.wikipedia.org/wiki/Apache_Maven). Well, if you are reading this, I assume you know about [Rultor](https://www.rultor.com/) and are trying to setup `@rultor release, tag is '1.0.0'`. But for some reason you can't. I'm here to help you deal with your helplessness. So let's begin...
 
 <br/>
 
 
 ### Register your groupId
-The first thing that you need to [create](https://issues.sonatype.org/secure/CreateIssue!default.jspa) a jira ticket for the new project and register your `groupId`.
+The first thing that you need is to [create](https://issues.sonatype.org/secure/CreateIssue!default.jspa) a jira ticket for the new project and register your `groupId`.
 
 
 ### Secret repository
-You need to create, it's a **private** repository on [GitHub](https://github.com/new).
+The second thing you need to create, is a **private** repository on [GitHub](https://github.com/new).
 
 After that, you must create a configuration file for rultor `.rultor.yml` and a folder where your secret files will be stored. The usual name for this is `assets`.
 
-Inside `.rultor.yml` you place the name of the repository to which you want to give access to your secrets:
+Inside `.rultor.yml` you put the repositories that will be given access to your secrets:
 
 ```yaml
 
@@ -93,9 +93,9 @@ After that you have to create new key:
     Key is valid for? (0)  0 # choose 0
   ```
 
-  5. Next steps pretty obvious(Comment should left empty)
+  5. Next steps are pretty obvious. Comment should be left empty.
    
-  6. After you've been created a key you should upload it into couple of servers:
+  6. After you've created a key you should upload it into couple of servers:
       
       `gpg --keyserver keys.openpgp.org --send-keys YOUR_KEY`
 
@@ -280,7 +280,7 @@ There are only the necessary things, I do not provide the complete `pom.xml` fil
 
 ```
 
-Then you need to configure your `.rultor.yml` inside the main repository.
+Then you need to configure your `.rultor.yml` inside the project repository.
 ```yaml
 
 assets:
