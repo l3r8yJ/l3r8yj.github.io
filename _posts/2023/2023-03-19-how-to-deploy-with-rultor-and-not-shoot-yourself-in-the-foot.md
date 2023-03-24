@@ -2,7 +2,7 @@
 title: How to deploy with Rultor and not shoot yourself in the leg
 layout: post
 date: '2023-03-19'
-last_modified_at: '2023-03-19'
+last_modified_at: '2023-03-24'
 categories:
 - guide
 - ci/cd
@@ -13,6 +13,10 @@ tags: ci/cd rultor guide howto
 <img height="400" title="devops" alt="devops" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmycalling.ru%2Fwp-content%2Fuploads%2F2015%2F10%2Fsaper.jpg&f=1&nofb=1&ipt=97a587d4503d682789c88270dc1e36a351a6eae194548355114495839535c404&ipo=images">
 
 This guy is trying to set up a CI/CD pipeline. Please don't distract him.
+
+Update! I was saved by Rultor today!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Today <a href="https://twitter.com/rultors?ref_src=twsrc%5Etfw">@rultors</a> saved a lot of time for me just by not letting me merge branches <a href="https://t.co/pJTpEpdwI7">pic.twitter.com/pJTpEpdwI7</a></p>&mdash; Ivan Ivanchuk (@L3r8y) <a href="https://twitter.com/L3r8y/status/1639228585696165888?ref_src=twsrc%5Etfw">March 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 This blog post is an addition to the [previous](/2023/02/22/complete-rultor-setup-guide) post for Java projects that will be published in [Maven Central](https://en.wikipedia.org/wiki/Apache_Maven). Well, if you are reading this, I assume you know about [Rultor](https://www.rultor.com/) and are trying to setup `@rultor release, tag is '1.0.0'`. But for some reason you can't. I'm here to help you deal with your helplessness. So let's begin...
 
