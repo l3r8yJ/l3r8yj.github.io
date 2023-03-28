@@ -12,13 +12,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Jetbrains mono';
+  src: url('/assets/fonts/webfonts//JetBrainsMono-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 a {
     text-decoration: none;
     color: inherit;
     background-image: linear-gradient(#000,#000);
-    background-position: 0 0.95em;
+    background-position: 0 1.23em;
     background-repeat: repeat-x;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     background-size: 1px 1px;
 }
 
@@ -39,8 +46,8 @@ a:hover {
 
 html,
 body {
-  font-family: 'cmu_typewriter_text_variablMd';
-  font-size: 20px;
+  font-family: 'Jetbrains Mono';
+  font-size: 16px;
   height: 100%;
 }
 

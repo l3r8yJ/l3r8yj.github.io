@@ -4,7 +4,7 @@
   font-family: 'cmu_typewriter_textlight';
   src: url('/assets/fonts/cmunbtl-webfont.woff');
   src: url('/assets/fonts/cmunbtl-webfont.eot?#iefix') format('embedded-opentype'),
-       url('/assets/fonts/cmunbtl-webfont.woff2') format('woff2'),
+  url('/assets/fonts/cmunbtl-webfont.woff2') format('woff2'),
        url('/assets/fonts/cmunbtl-webfont.woff') format('woff'),
        url('/assets/fonts/cmunbtl-webfont.ttf') format('truetype'),
        url('/assets/fonts/cmunbtl-webfont.svg#cmu_typewriter_text_variablMd') format('svg');
@@ -12,8 +12,15 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Jetbrains Monospace';
+  src: url('/assets/fonts/webfonts/JetBrainsMono-Thin.woff2');
+  font-weight: normal;
+  font-style: monospace;
+}
+
 code {
-  font-family: 'cmu_typewriter_textlight';
+  font-family: 'Jetbrains Monospace';
 }
 
 .highlight > pre,
@@ -23,19 +30,19 @@ pre.highlight {
   padding-left: 3px;
   border: 1px solid #ccc;
   overflow-x: auto;
-  font-size: 18px;
+  font-size: 15px;
   text-indent: 0px;
   background-color: #eee;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  font-family: 'cmu_typewriter_textlight', monospace;
+  font-family: 'Jetbrains Monospace', monospace;
   font-style: normal;
   src: url(/assets/fonts/cmunbtl.ttf);
 }
 
 .highlighter-rouge {
-  font-family: 'cmu_typewriter_textlight', monospace;
+  font-family: 'Jetbrains Monospace', monospace;
   font-style: normal;
   src: url(/assets/fonts/cmunbtl.ttf);
-  font-size: 18px;
+  font-size: 15px;
   background-color: #eee;
 }
