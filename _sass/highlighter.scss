@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Jetbrains Monospace';
-  src: url('/assets/fonts/webfonts/JetBrainsMono-Thin.woff2');
+  src: url('/assets/fonts/webfonts/JetBrainsMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: monospace;
 }
@@ -36,13 +36,11 @@ pre.highlight {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   font-family: 'Jetbrains Monospace', monospace;
   font-style: normal;
-  src: url(/assets/fonts/cmunbtl.ttf);
 }
 
 .highlighter-rouge {
   font-family: 'Jetbrains Monospace', monospace;
   font-style: normal;
-  src: url(/assets/fonts/cmunbtl.ttf);
   font-size: 15px;
   background-color: #eee;
 }
