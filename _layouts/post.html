@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+<script defer>
+  window.onload = () => {
+    document
+      .querySelector(".container-main")
+      .querySelectorAll("a")
+        .forEach(link => {
+          link.setAttribute("rel", "nofollow");
+          link.setAttribute("target", "_blank");
+        })
+  }
+</script>
 <article class="container-post">
   <div class="post-title">
     <h1>{{ page.title }}</h1>
