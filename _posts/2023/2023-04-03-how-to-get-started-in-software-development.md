@@ -2,7 +2,7 @@
 title: How to get started in software development
 layout: post
 date: '2023-04-03'
-last_modified_at: '2023-04-04'
+last_modified_at: '2023-04-06'
 categories:
   - development
   - guide
