@@ -109,4 +109,20 @@ Here I have tried to describe how to get started as a software developer. Also, 
 
 > *Don't do something by pushing yourself – it will kill all interest and motivation!*
 
+<br/>
+
+## Couple videos about Open Source
+
+*How to get into an opticsource, so as not to burn with shame (Russian*)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VtX7IpCHMS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+*Open source developers inevitably have better soft and tech skills (English)*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D12gi1x6Cdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+*Contributing to Open Source Can Change Your Life - Here’s How to Do It (English)*
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CML6vfKjQss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 *Thanks!*
