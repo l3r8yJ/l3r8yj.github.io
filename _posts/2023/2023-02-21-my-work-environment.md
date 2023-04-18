@@ -2,7 +2,7 @@
 title: My work environment.
 layout: post
 date: '2023-02-21'
-last_modified_at: '2023-02-21'
+last_modified_at: '2023-04-19'
 categories:
 - tools
 - environment
@@ -23,6 +23,10 @@ The second and a half most important thing is a terminal. Well, I tried two opti
 
 [<img style="float: left; margin-right: 10px;" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogonoid.com%2Fimages%2Fintellij-idea-logo.png&f=1&nofb=1&ipt=80e21dfb3e7de50c8489181ad6fca3847b36b636f39cdec0c489ff79b62f3c68&ipo=images" width="78"/>](https://www.jetbrains.com/idea/) <br/>
 Here we go to the IDE, [based on the languages I use](/about/) I've chosen [IntelliJ IDEA](https://www.jetbrains.com/idea/). The most powerful IDE for any language, I use it mostly for Java and Rust, for other languages I can use anything from a basic text editor on my laptop to [nvim](https://neovim.io/)(*Press `Esc`, press `:`, enter `q` to exit*) or [Sublime Text](https://www.sublimetext.com/).
+
+Here's a great presentation on how to work effectively with IDEA
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_rj7dx6c5R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br/>
 

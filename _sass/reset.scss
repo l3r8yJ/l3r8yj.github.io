@@ -34,47 +34,21 @@
 }
 
 b, strong {
-  font-family: 'Jetbrains Bold';
+  font-family: 'Arial Bold';
 }
 
 em {
-  font-family: 'Jetbrains Italic';
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    background-image: linear-gradient(#000,#000);
-    background-position: 0 1.23em;
-    background-repeat: repeat-x;
-    margin-bottom: 10px;
-    background-size: 1px 1px;
-}
-
-a:visited {
-    color: inherit;
-}
-
-a:hover {
-    text-decoration: none;
-    background-image: linear-gradient(#268714,#268714);
-    background-size: 2px 2px;
-}
-
-
-* {
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Arial Italic';
 }
 
 html,
 body {
-  font-family: 'Jetbrains Mono';
+  font-family: 'Arial';
   font-size: 16px;
   height: 100%;
 }
 
 a {
-  text-decoration: none;
   color: #000;
 }
 
