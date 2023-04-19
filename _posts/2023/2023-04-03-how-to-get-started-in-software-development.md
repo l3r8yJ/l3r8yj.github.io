@@ -113,7 +113,7 @@ Here I have tried to describe how to get started as a software developer. Also, 
 
 ## Couple videos about Open Source
 
-*How to get into an opticsource, so as not to burn with shame (Russian*)
+*How to get into an open source, so as not to burn with shame (Russian*)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VtX7IpCHMS8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
