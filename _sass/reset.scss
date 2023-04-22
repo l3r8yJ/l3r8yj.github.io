@@ -13,6 +13,27 @@
 }
 
 @font-face {
+  font-family: 'CMU Sans Serif';
+  src: url('/assets/fonts/PT_Serif/PTSerif-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Sans Serif Bold';
+  src: url('/assets/fonts/PT_Serif/PTSerif-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CMU Sans Serif Italic';
+  src: url('/assets/fonts/PT_Serif/PTSerif-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'Jetbrains mono';
   src: url('/assets/fonts/webfonts/JetBrainsMono-Regular.woff2');
   font-weight: normal;
@@ -34,16 +55,16 @@
 }
 
 b, strong {
-  font-family: 'Arial Bold';
+  font-family: 'CMU Sans Serif Bold';
 }
 
 em {
-  font-family: 'Arial Italic';
+  font-family: 'CMU Sans Serif Italic';
 }
 
 html,
 body {
-  font-family: 'Arial';
+  font-family: 'CMU Sans Serif';
   font-size: 16px;
   height: 100%;
 }
