@@ -2,7 +2,7 @@
 title: How to get started in software development
 layout: post
 date: '2023-04-03'
-last_modified_at: '2023-04-06'
+last_modified_at: '2023-06-30'
 categories:
   - development
   - guide
@@ -40,6 +40,9 @@ But [you shouldn't sit around and wait](https://www.yegor256.com/2015/02/16/it-i
 
 *Train your ability to learn, not get used to being handed something on a silver platter!*
 
+You can also try to find a few beginners just like you to work as part of a team. Let's say you are putting together a team with 1 junior backend developer, 1 junior frontend developer, 1 junior tester, 1 junior tester, etc. After that you start developing some website, which, for example, somehow replicates the existing one but with some changes. If your team is motivated enough, maybe for six months of joint efforts, you can create something that can be deployed and show the employer. Such an experience would be equivalent to a real commercial project. In addition, you can find someone who is already working, so he checks your project once a week (you can even pay him for this, it will be worth it).
+
+The most difficult thing here is to keep motivation at a high level. Because very often teams like the one described above fall apart after 1-4 weeks due to a lack of interest in working on the project.
 <br/>
 
 
