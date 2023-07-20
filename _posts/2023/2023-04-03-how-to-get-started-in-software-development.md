@@ -45,6 +45,11 @@ You can also try to find a few beginners just like you to work as part of a team
 The most difficult thing here is to keep motivation at a high level. Because very often teams like the one described above fall apart after 1-4 weeks due to a lack of interest in working on the project.
 <br/>
 
+**I'm highly recommend you to watch this video**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dCn53X1I2R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<b/>
 
 ## Use proper tools
 
