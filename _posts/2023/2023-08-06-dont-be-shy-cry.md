@@ -24,7 +24,7 @@ So how can we reduce the number of such situations? In my opinion, several thing
 You need to find the person who wrote this work of art and the person who approved it 
 – very often these people are on your team. Then you go into GitHub, GitLab, Jira etc. and create a ticket for them, where you're asking them why this code is written in this way.
 If they ignore you, go cry to your boss with words like, "These guys are interfering with my work."
-Tell me how unprofessional this work was done, it is impossible to maintain! Say everything you think about this code.
+Tell how unprofessional this work was done, it is impossible to maintain! Say everything you think about this code.
 
 <br/>
 
