@@ -34,7 +34,7 @@ You have to understand these things;
 all the code that you write at work will be read by someone, will be maintained by someone.
 Tests which you write will fail on someone’s code change, 
 and when this guy or girl tries to find reason why tests failed, they won't have
-to spend 2-3 hours to make clear why you’re comparing dto1 and dto2 in test called compareTest.
+to spend 2-3 hours to make clear why you’re comparing dto1 and dto2 in test called `compareTest`.
 
 Also tell yourself, never, never do this.
 ```java
