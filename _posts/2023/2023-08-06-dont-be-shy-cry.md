@@ -66,6 +66,45 @@ Explain why no one should fall victim to your laziness, irresponsibility and sla
 
 <br/>
 
+## Don't be lazy
+
+Try to spend more time thinking about the design.
+Don't be in a hurry, keep a cool head to avoid such disappointments.
+```java
+public int calculateMatchedCount(
+            KmbAsyncRequest request,
+            KmbRule rule,
+            Set<DivisionLimitV2> limits,
+            String regionCode,
+            BigDecimal checkSum
+    ) {
+        int count = 0;
+        if (!filterByGszLimits(checkSum, List.of(rule), limits).isEmpty()) {
+            count++;
+        }
+        if (!filterByPersonLimits(checkSum, List.of(rule), limits).isEmpty()) {
+            count++;
+        }
+        if (validRegion(regionCode, rule)) {
+            count++;
+        }
+        if (validClientClass(request, rule)) {
+            count++;
+        }
+        if (validBehaviorRateLevel(request, rule)) {
+            count++;
+        }
+        if (validDealType(request, rule)) {
+            count++;
+        }
+        return count;
+    }
+
+```
+How are we supposed to maintain that?
+
+<br/>
+
 ## Make tools more annoying
 
 What if you don't have the right quality control tool –
@@ -80,6 +119,15 @@ The Algorithm is simple:
 2. Send a [pull request.](https://github.com/volodya-lombrozo/jtcop/pull/249)
 3. Update tool to a new version with your contribution.
 4. Fix issues in your project to make it work again.
+
+<br/>
+
+These advices may seem pretty obvious to you, 
+and all this thing may sound like
+_"We are against everything bad and for everything good."_
+But I make
+you **do** things instead of **knowing** about the problem
+and nodding your head with a clever look.
 
 Thanks!
 
