@@ -38,18 +38,18 @@ public class ExceptionHandler {
     }
 }
 ```
-And user of our API get's response like 
+And user of our API gets response like 
 ```asm
 {
     "error": "You have a headache!"
 }
 ```
-So, first of all, this looks like a mess. I bet you wished you hadn't read this code or had to strain to understand what it says here.
+So, first of all, this looks like a mess. I bet you wish you hadn't read this code or had to strain to understand what was said here.
 But that's beside the point, just a quick note.
 
 Let's look at it from the other side. When a programmer writes the `throw` keyword, he knows that somewhere in the program he has a piece of code that will be executed. Looks familiar, doesn't it?
 
-To refersh your memory take a look at this
+To refresh your memory take a look at this
 ```asm
 _start:
     ; Entry point of the program
