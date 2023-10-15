@@ -44,7 +44,7 @@ And user of our API gets response like
     "error": "You have a headache!"
 }
 ```
-So, first of all, this looks like a mess. I bet you wish you hadn't read this code or had to strain to understand what was said here.
+So, first of all, this looks like a mess. You probably didn't want to read this code, or you had to struggle to realize what is written here.
 But that's beside the point, just a quick note.
 
 Let's look at it from the other side. When a programmer writes the `throw` keyword, he knows that somewhere in the program he has a piece of code that will be executed. Looks familiar, doesn't it?
