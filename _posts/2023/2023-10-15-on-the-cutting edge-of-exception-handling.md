@@ -14,7 +14,7 @@ tags:
   - programming
   - coding
 ---
-Unfortunately, in work we're use [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework). Not too long ago I was able to discover an interesting detail in our approach to exception handling.
+Unfortunately, in work we're using [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework). Not too long ago I was able to discover an interesting detail in our approach to exception handling.
 <img height="420" title="Catching guy" alt="Catching guy" src="/assets/images/catch.gif">
 Usually it looks like some class (most often a service) throws an exception. There is an exception handler in another part of the program that does the job.
 ```asm
