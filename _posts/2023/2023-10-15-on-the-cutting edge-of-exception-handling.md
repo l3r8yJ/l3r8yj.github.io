@@ -76,7 +76,7 @@ loop_exit:
     mov eax, 1       ; syscall number for sys_exit
     int 0x80         ; Call kernel
 ```
-Take a closer look at the `jmp` keyword, it does the same thing as `throw`. In fact, **we are still using assembler instructions, in 2023**.
+Take a closer look at the `jmp` keyword, it does the same thing as `throw`. In fact, **we are still using assembler instructions, in 2023**. It seems we still live in a procedural paradigm.
 I don't think it can be avoided in Java, but for example in Rust they handle errors as follows
 ```asm
 use std::fs::File;
