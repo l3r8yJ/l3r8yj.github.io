@@ -2,7 +2,7 @@
 title: On the cutting edge of exception handling
 layout: post
 date: '2023-10-15'
-last_modified_at: '2023-10-15'
+last_modified_at: '2023-10-19'
 categories:
   - exceptions
   - java
