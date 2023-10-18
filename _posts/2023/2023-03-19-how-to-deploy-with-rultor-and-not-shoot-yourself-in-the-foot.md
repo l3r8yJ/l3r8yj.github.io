@@ -34,22 +34,18 @@ After that, you must create a configuration file for rultor `.rultor.yml` and a 
 
 Inside `.rultor.yml` you put the repositories that will be given access to your secrets:
 
-```yaml
-
+```asm
 friends:
   - nickname/reponame
-
 ```
 
 Now your secret repository should look like this.
 
-```
-
+```asm
 secrets-repo-name
 |
 |–– .rultor.yml
 |–– assets/
-
 ```
 
 
@@ -69,7 +65,7 @@ After that you have to create new key:
   1. `gpg --full-gen-key`
 
   2. 
-  ```bash
+  ```asm
     Please select what kind of key you want:
     (1) RSA and RSA
     (2) DSA and Elgamal
@@ -81,13 +77,13 @@ After that you have to create new key:
     Your selection? 1 # choose 1
   ```
 
-  3. ```bash
+  3. ```asm
      RSA keys may be between 1024 and 4096 bits long.
      What keysize do you want? (3072) 2048 # choose 2048
      ```
 
   4. 
-  ```bash  
+  ```asm  
     Please specify how long the key should be valid.
     0 = key does not expire
     <n>  = key expires in n days
@@ -117,8 +113,7 @@ After that you have to create new key:
 
   10. Create file `assets/settings.xml` which looks like:
 
-      ```
-
+      ```asm
       <?xml version="1.0" encoding="UTF-8"?>
       <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -144,7 +139,6 @@ After that you have to create new key:
               </profile>
           </profiles>
       </settings> 
-
       ```
 
   10. Add `KEY_ID` that you saved in `settings.xml` into field `<gpg.keyname>KEY_ID</gpg.keyname>`
@@ -154,8 +148,7 @@ After that you have to create new key:
   13. Add your jira `username` and `password` that you used to create the ticket.
 
 Your secret repository now looks like this.
-```
-
+```asm
 secrets-repo-name
 |
 |–– .rultor.yml
@@ -164,14 +157,12 @@ secrets-repo-name
     |–– settings.xml
     |–– secring.gpg
     |–– pubring.gpg
-
 ```
 
 ### Configure main repository
 There are only the necessary things, I do not provide the complete `pom.xml` file.
 
-```
-
+```asm
 ...
 <scm>
   <connection>scm:git:git@github.com:l3r8yJ/sa-tan.git</connection>
@@ -281,12 +272,10 @@ There are only the necessary things, I do not provide the complete `pom.xml` fil
     </build>
   </profile>
 </profiles>
-
 ```
 
 Then you need to configure your `.rultor.yml` inside the project repository.
-```yaml
-
+```asm
 assets:
   settings.xml: nickname/secret_repo#assets/settings.xml
   secring.gpg: nickname/secret_repo#assets/secring.gpg
@@ -301,7 +290,6 @@ release:
     mvn versions:set "-DnewVersion=${tag}"
     git commit -am "${tag}"
     mvn clean deploy -Prelease --errors --settings ../settings.xml
-
 ```
 
 ### Done

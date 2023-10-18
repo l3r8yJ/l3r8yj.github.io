@@ -37,7 +37,7 @@ and when this guy or girl tries to find reason why tests failed, they won't have
 to spend 2-3 hours to make clear why you’re comparing dto1 and dto2 in test called `compareTest`.
 
 Also tell yourself, never, never do this.
-```java
+```asm
 @Test
 void givenNone_whenGetAuthorizedPersons_andNothing_andFoundEmpty_thenOk() {
     this.authorizedPersonController.getAllPersons(
@@ -46,7 +46,6 @@ void givenNone_whenGetAuthorizedPersons_andNothing_andFoundEmpty_thenOk() {
     );
     assertTrue(true);
 }
-
 ```
 I was out of my mind when I discovered this piece of crap.
 The guy had just written code with an `assertTrue(true)` statement to keep the coverage level.
@@ -70,7 +69,7 @@ Explain why no one should fall victim to your laziness, irresponsibility and sla
 
 Try to spend more time thinking about the design.
 Don't be in a hurry, keep a cool head to avoid such disappointments.
-```java
+```asm
 public int calculateMatchedCount(
             KmbAsyncRequest request,
             KmbRule rule,
@@ -99,7 +98,6 @@ public int calculateMatchedCount(
         }
         return count;
     }
-
 ```
 How are we supposed to maintain that?
 

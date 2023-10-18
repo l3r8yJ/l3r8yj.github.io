@@ -30,9 +30,7 @@ We will not discuss whether Singleton is good or bad, for some reason we have to
 
 First of all, let's look at the typical implementation seen in some training platforms, books, etc.
 
-```java
-
-
+```asm
 public final class Dummy {
 
   /**
@@ -58,7 +56,6 @@ public final class Dummy {
     return Dummy.INSTANCE;
   }
 }
-
 ```
 <br/>
 
@@ -70,8 +67,7 @@ is to make our singleton [lazy](https://en.wikipedia.org/wiki/Lazy_initializatio
 
 It should look like
 
-```java
-
+```asm
 public final class Dummy {
 
   /**
@@ -97,7 +93,6 @@ public final class Dummy {
     return Dummy.INSTANCE;
   }
 }
-
 ```
 If we weren't in the real world, we could say that our code has no issues now. It's quite performant thanks to lazy initialization and we get a single object instance. But there's a big problem, our implementation **isn't thread-safe.**
 
@@ -114,15 +109,13 @@ At best we can expect one instance to overwrite the other, at worst we get two r
 
 If you are slightly familiar with Java concurrency, you can suggest a solution that looks like this
 
-```java
-
+```asm
 public synchronized static Dummy getInstance() {
   if (null == Dummy.INSTANCE) {
       Dummy.INSTANCE = new Dummy();
   }
   return Dummy.INSTANCE;
 }
-
 ```
 And indeed, such a solution has the right to life, but **we have problems with performance again**...
 
@@ -130,8 +123,7 @@ If we take a deeper look at this case, we see one thing. We don't want to synchr
 
 Now you can provide me solution like that
 
-```java
-
+```asm
 public static Dummy getInstance() {
   /**
    * Checking when we aren't synchronized.
@@ -149,7 +141,6 @@ public static Dummy getInstance() {
   }
   return Dummy.INSTANCE;
 }
-
 ```
 
 It's really very close to what we need, but we haven't noticed a single thing. It's the "[happens-before](https://stackoverflow.com/a/11970581/11529150)" relation. In fact, it's not the easiest topic, so I'm just providing a link to it. 
@@ -157,8 +148,7 @@ It's really very close to what we need, but we haven't noticed a single thing. I
 To satisfy the visibility rule for this relation, we should use the keyword **`volatile`**.
 
 
-```java
-
+```asm
 public static Dummy getInstance() {
 
   private static volatile Dummy INSTANCE = null;
@@ -179,7 +169,6 @@ public static Dummy getInstance() {
   }
   return Dummy.INSTANCE;
 }
-
 ```
 
 In the end, we can say that we now have a thread-safe implementation of the Singleton pattern.
@@ -196,21 +185,10 @@ Honestly, I don't.
 
 In my opinion the best way to implement Singleton is
 
-```java
-
+```asm
 public class Dummy {
 
   private final String value = "I'm too heavy!";
-
-  /**
-   * Aliaksei Bialiauski gave me the idea for the exception in the constructor,
-   * thank him for that!
-   * The main reason for this is to prevent an 
-   * instance of the class from being created through reflection.
-   */
-  private Dummy() throws IllegalAccessException {
-    throw new IllegalAccessException("Can't create this instance!");
-  }
 
   public String value() {
     return this.value;
@@ -227,7 +205,6 @@ public class Dummy {
     static final Dummy INSTANCE = new Dummy();
   }
 }
-
 ```
 
 This is the complete solution, it is the Singleton pattern specification.

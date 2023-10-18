@@ -27,13 +27,13 @@ Well, today i'm going to review two cases:
 
 
 3) You have to go and create a `private` repository with `rubygems.yml` file:
-```yaml
+```asm
 :rubygems_api_key: # your key
 :backtrace: true | false
 :verbose: true | false
 ```
 Also in this repo we create `.rultor.yml`:
-```yaml
+```asm
 friends:
   - your_nickname/repo_name
 ```
@@ -41,7 +41,7 @@ This configuration allows `rultor` to share these secrets with the repositories 
 
 
 4) Now you have to go to your main repository and create a `.rultor.yml`:
-```yaml
+```asm
 architect:
   - your_nickname
 assets:
@@ -103,7 +103,7 @@ token = "plase_your_token"
 ```
 
 3) Go to your main repository. Here we also create a `.rultor.yml`:
-```yaml
+```asm
 architect:
   - your_nickname
 docker:

@@ -32,7 +32,7 @@ Now that we have dealt with the physiological side of the question, let's move o
 
 Take a look at this Java class.
 
-```java
+```asm
 
 class RequestToApi {
   private URI uri;
@@ -49,7 +49,7 @@ class RequestToApi {
 ```
 
 Just typical code example.
-```java
+```asm
 
 RequestToApi req = new RequestToApi();
 req.setUri(new URI("https://someawesomeapi.com"))
@@ -69,7 +69,7 @@ We don't treat it as someone smart that can do the work for us. We treat it as a
 
 
 I think that proper and object-oriented way to do this is the following one.
-```java
+```asm
 
 class RequestToApi {
   private final URI uri;
@@ -91,7 +91,7 @@ class RequestToApi {
 
 ```
 The use of this class is much better now.
-```java
+```asm
 
 final RequestToApi req = new RequestToApi(
   new URI("https://someawesomeapi.com")
@@ -143,7 +143,7 @@ All you have to do is to add it to your `pom.xml`:
 
 Now I'll give you some examples:
 
-```java
+```asm
 
 class IAmGoodBoy {
   private final String name;
@@ -157,7 +157,7 @@ class IAmGoodBoy {
 
 As you can see this class `IAmGoodBoy` is good, there is no reason to send a warning here.
 
-```java
+```asm
 
 class IAmBadBoy {
   private String name;
@@ -179,7 +179,7 @@ because method body contains an assignment, setters violates OOP principles
 
 But if life has forced you to have bad classes in your code, you can annotate them.
 
-```java
+```asm
 
 @Mutable
 class IAmBadBoy {

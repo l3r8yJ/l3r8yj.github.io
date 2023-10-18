@@ -26,7 +26,7 @@ On a slightly more serious note, what makes a programming language *difficult to
 Let's take a look at syntax sugar, how it usually looks?
 
 
-```java
+```asm
 ...
 var post = someVariableDeclaredBefore;
 ...
@@ -54,7 +54,7 @@ So you should increase your AST to [Statue of Unity](https://en.wikipedia.org/wi
 
 Well, when I talk about mutability in this context, I mean reassigning the same variable multiple times with parallel reading from it. The difficulty of analysis here lies not only in the equal sign.
 
-```java
+```asm
 File f = new File("foo.txt");
 f.doSmth();
 f.setPath("bar.txt");
@@ -63,7 +63,7 @@ f.write(content);
 Changing statements multiple times makes analysis difficult, because keeping track of execution flows becomes a complex task. We must teach our tool to remember when and how each statement changes.
 
 If we can't create setters, the code might look like this:
-```java
+```asm
 final File f1 = new File("foo.txt");
 final File f2 = new File("bar.txt");
 f1.doSmth();
@@ -77,7 +77,7 @@ Now you know that you need to ban immutability in your artwork from the world of
 ## Multiple conditional flow
 
 How often do you see something like that:
-```java
+```asm
 String someCoolMethod(String unsafe) {
   // code above
   if (unsafe.isEmpty()) {
@@ -113,7 +113,7 @@ What can you say about this quote?
   > &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; – Arno Haase
 
 Before I can explain it to you, let's look at this piece of code.
-```java
+```asm
 interface Request {
   Response act();
 }
