@@ -94,3 +94,23 @@ fn main() {
 }
 ```
 In my opinion, this looks much better. First, you can see where the error was handled. Second, it obliges you to handle the exception yourself.
+
+Unfortunately, the errors in [EOLANG](https://www.eolang.org/) have the same `goto` or `jmp` way of thinking (example was taken from [here](https://news.eolang.org/2022-07-18-error-and-try-catch.html)).
+```asm
+[x] > check
+  if. > @
+    x.eq 0
+    error "Can't divide by zero"
+    42.div x
+```
+Line
+
+> `error "Can't divide by zero"` 
+
+looks same as
+
+> `throw new ZeroDivisionException("Can't divide by zero")` 
+
+to me.
+
+It's called [exceptions as control flow](https://softwareengineering.stackexchange.com/questions/189222/are-exceptions-as-control-flow-considered-a-serious-antipattern-if-so-why). I hope that EOLANG will move on from this to a different way of handling errors.
