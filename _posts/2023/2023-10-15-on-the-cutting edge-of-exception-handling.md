@@ -113,4 +113,4 @@ looks same as
 
 to me.
 
-It's called [exceptions as control flow](https://softwareengineering.stackexchange.com/questions/189222/are-exceptions-as-control-flow-considered-a-serious-antipattern-if-so-why). I hope that EOLANG will move on from this to a different way of handling errors.
+This forces programmers to use [exceptions as control flow](https://softwareengineering.stackexchange.com/questions/189222/are-exceptions-as-control-flow-considered-a-serious-antipattern-if-so-why). I hope that EOLANG will move on from this to a different way of handling errors.
