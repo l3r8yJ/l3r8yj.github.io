@@ -4,9 +4,7 @@ layout: post
 date: '2023-11-24'
 last_modified_at: '2023-11-24'
 categories:
-  - docker
-  - enviroment
-  - coding
+  - guide
 tags:
   - exceptions
   - exception

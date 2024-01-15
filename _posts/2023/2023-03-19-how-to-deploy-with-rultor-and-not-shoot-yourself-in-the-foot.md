@@ -4,10 +4,10 @@ layout: post
 date: '2023-03-19'
 last_modified_at: '2023-03-24'
 categories:
-- guide
-- ci/cd
-- rultor
-tags: ci/cd rultor guide howto
+  - guide
+tags: 
+  - ci/cd 
+  - rultor
 ---
 
 <img height="400" title="devops" alt="devops" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmycalling.ru%2Fwp-content%2Fuploads%2F2015%2F10%2Fsaper.jpg&f=1&nofb=1&ipt=97a587d4503d682789c88270dc1e36a351a6eae194548355114495839535c404&ipo=images">
