@@ -16,6 +16,7 @@ jobs:
         with:
           ruby-version: 2.6
       - run: gem install webrick
+      - run: gem install faraday-net_http -v 3.0.2
       - run: gem install faraday-retry
       - run: bundle update
       - run: bundle exec jekyll build
