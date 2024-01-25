@@ -36,7 +36,7 @@ Thus, on your Way of the Samurai you should spend 70% of your time coding, not r
 
 You might have no idea how to find these "problems". The easiest way is contributions into [Open Source](https://en.wikipedia.org/wiki/Open_source). Just go to [GitHub](https://github.com/) and find the project that you will be involved in! Make your first contribution and feel useful, because you have contributed to something that thousands of programmers are probably using! And you're just getting started.
 
-But [you shouldn't sit around and wait](https://www.yegor256.com/2015/02/16/it-is-not-a-school.html) for someone to come help you understand the project. You should dive into it yourself, read the documentation, study the source code. After that you should ask questions. No one likes people who start throwing questions that are answered in the documentation or code. 
+But [you shouldn't sit around and wait](https://www.yegor256.com/2015/02/16/it-is-not-a-school.html) for someone to come help you understand the project. You should dive into it yourself, read the documentation, study the source code. After that you should ask questions. No one likes people who start throwing questions that are answered in the documentation or code.
 
 *Train your ability to learn, not get used to being handed something on a silver platter!*
 
@@ -53,7 +53,7 @@ The most difficult thing here is to keep motivation at a high level. Because ver
 
 ## Use proper tools
 
-As a programmer you have to use the right tools for software development. I'm not talking about IDE, etc. right now. 
+As a programmer you have to use the right tools for software development. I'm not talking about IDE, etc. right now.
 
 I am talking about several things
   1. [GitHub](https://github.com/) is the main platform for Open Source developers, make it your social network. Don't try to be cool on Instagram or Facebook, forget this crap – use GitHub.
@@ -64,9 +64,9 @@ I am talking about several things
 
 ## Sources of knowledge
 
-I prefer books to other sources of information. You don't need to read books about the Spring framework, Hibernate, etc. 
-You need to read books that will deal with general aspects of software development. 
-Such books will never lose relevance, unlike those books that are designed for a specific framework. 
+I prefer books to other sources of information. You don't need to read books about the Spring framework, Hibernate, etc.
+You need to read books that will deal with general aspects of software development.
+Such books will never lose relevance, unlike those books that are designed for a specific framework.
 By the time a book dedicated to the framework comes out, it will have had time to be updated several times.
 
 There are a few books that I like, I don't agree with everything in these books, but overall they are worth reading.
@@ -80,14 +80,14 @@ There are a few books that I like, I don't agree with everything in these books,
 
   - [Code Complete](https://en.wikipedia.org/wiki/Code_Complete). You know what, programmers have several Bibles :)
 
-  - [Refactoring](https://martinfowler.com/books/refactoring.html). You know what, programmers have several Bibles :) 
+  - [Refactoring](https://martinfowler.com/books/refactoring.html). You know what, programmers have several Bibles :)
 
   - [Working Effectively with Legacy Code](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052) A lot of useful stuff, especially about testing.
 
   - [Release it!](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software-ebook/dp/B079YWMY2V). How you should release your software.
 
-  - [Elegant Objects, v1-v2](https://www.yegor256.com/elegant-objects.html). Watch out! May cause a burning pain in the ass of people with an intolerant opinion different from that of the majority or industry standarts. 
-  These books will break down your understanding of OOP. 
+  - [Elegant Objects, v1-v2](https://www.yegor256.com/elegant-objects.html). Watch out! May cause a burning pain in the ass of people with an intolerant opinion different from that of the majority or industry standarts.
+  These books will break down your understanding of OOP.
   **To me**, these concepts are more properly described than those we are used to hearing.
 
 - ### Java-oriented books
@@ -111,9 +111,11 @@ There are a few books that I like, I don't agree with everything in these books,
 
   - [Dragon Book](https://www.amazon.com/exec/obidos/ASIN/0321486811/acmorg-20). For those who want to dive into compilers.
 
+  - [Crafting Interpreters](https://craftinginterpreters.com/) Very well written book about development of interpreters.
+
 ## Summary
 
-Here I have tried to describe how to get started as a software developer. Also, as an important mention, don't try to sit and write code for 7-8-9-10 hours a day. You will just burn out, keep learning not more than 2-4 hours a day and 3-5 days a week. 
+Here I have tried to describe how to get started as a software developer. Also, as an important mention, don't try to sit and write code for 7-8-9-10 hours a day. You will just burn out, keep learning not more than 2-4 hours a day and 3-5 days a week.
 
 > *Don't do something by pushing yourself – it will kill all interest and motivation!*
 
