@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "Arno Pro";
-  src: url('assets/fonts/arno/ArnoPro-Regular.woff2');
+  src: url('assets/fonts/arno/ArnoPro-Display.woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
 @font-face {
   font-family: "Arno Pro Bold";
   src: url('assets/fonts/arno/ArnoPro-Bold.woff2');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -30,7 +30,7 @@
   font-family: "Arno Pro Italic";
   src: url('assets/fonts/arno/ArnoPro-Italic.woff2');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 b, strong {
@@ -44,7 +44,7 @@ em {
 html,
 body {
   font-family: 'Arno Pro';
-  font-size: 18px;
+  font-size: 22px;
   height: 100%;
 }
 
