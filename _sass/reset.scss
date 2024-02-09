@@ -13,6 +13,27 @@
 }
 
 @font-face {
+  font-family: "Arno Pro";
+  src: url('assets/fonts/arno/ArnoPro-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arno Pro Bold";
+  src: url('assets/fonts/arno/ArnoPro-Bold.woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Arno Pro Italic";
+  src: url('assets/fonts/arno/ArnoPro-Italic.woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
   font-family: 'CMU Sans Serif';
   src: url('/assets/fonts/PT_Serif/PTSerif-Regular.ttf');
   font-weight: normal;
@@ -55,16 +76,16 @@
 }
 
 b, strong {
-  font-family: 'CMU Sans Serif Bold';
+  font-family: 'Arno Pro Bold';
 }
 
 em {
-  font-family: 'CMU Sans Serif Italic';
+  font-family: 'ARno Pro Italic';
 }
 
 html,
 body {
-  font-family: 'CMU Sans Serif';
+  font-family: 'Arno Pro';
   font-size: 18px;
   height: 100%;
 }
