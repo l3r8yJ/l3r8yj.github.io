@@ -14,31 +14,31 @@
 
 @font-face {
   font-family: "Arno Pro";
-  src: url('assets/fonts/arno/ArnoPro-SmText.woff2');
+  src: url('/assets/fonts/arno/ArnoPro-SmText.woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Arno Pro Bold";
-  src: url('assets/fonts/arno/ArnoPro-Bold.woff2');
+  src: url('/assets/fonts/arno/ArnoPro-Bold.woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Arno Pro Italic";
-  src: url('assets/fonts/arno/ArnoPro-Italic.woff2');
+  src: url('/assets/fonts/arno/ArnoPro-Italic.woff2');
   font-weight: normal;
   font-style: italic;
 }
 
 b, strong {
-  font-family: 'Arno Pro Bold';
+  font-family: 'Arno Pro Bold', serif;
 }
 
 em {
-  font-family: 'ARno Pro Italic';
+  font-family: 'ARno Pro Italic', cursive;
 }
 
 html,
