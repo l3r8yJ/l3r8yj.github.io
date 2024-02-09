@@ -8,21 +8,25 @@ categories:
 tags: blog-post
 ---
 ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.javacodegeeks.com%2Fwp-content%2Fuploads%2F2014%2F09%2Flogo1.png&f=1&nofb=1&ipt=bd2c2dc11f87b075dcaf2e4fccde0de7ce57dada3e9a898ba3fda7439453cfc3&ipo=images)
-Well, if you are reading this, you probably know what [Rultor](https://doc.rultor.com/) is. But for some reason you don't understand how to set it up. I also have a [template repository](https://github.com/l3r8yJ/elegant) in case I start a new project, it's already a bit set up. You can fork it and use.
+Well, if you are reading this, you probably know what [Rultor](https://doc.rultor.com/) is. 
+But for some reason, you don't understand how to set it up.
+I also have a [template repository](https://github.com/l3r8yJ/elegant)
+in case I start a new project,
+it's already a bit set up.
+You can fork it and use.
+Well, today I'm going to review two cases:
+1) [Ruby](#ruby) project, `@merge` and `@release`
+2) [Rust](#rust) project, `@merge` and `@release`
 
-Well, today i'm going to review two cases:
-  - [Ruby](#ruby) project, `@merge` and `@release`
-  - [Rust](#rust) project, `@merge` and `@release`
+<br/>
 
 <div id="ruby">
-  <h2>Let's begin with configuration for Ruby project.</h2>
+  <h2>Let's begin with configuration for a Ruby project.</h2>
 </div>
 
 1) You need to go into [Rubygems settings](https://rubygems.org/settings/edit) of your account and set the `MFA` level to `UI and gem sign`.
 
-
 2) Then you need to create an `API key` with `push` permission. Do this [here](https://rubygems.org/profile/api_keys).
-
 
 3) You have to go and create a `private` repository with `rubygems.yml` file:
 ```asm
@@ -67,7 +71,7 @@ merge:
 ```
 All the work you describe in the `Rakefile` will be done before `merge` or `release`.
 Also `lib/gemname/version.rb` should look like this:
-```ruby
+```asm
 module YourModule
   # The version should only be 0.0.0
   VERSION = '0.0.0'.freeze
@@ -75,7 +79,7 @@ end
 ```
 
 5) We are almost done. Now we need to go into the `.gemspec` file and do a little thing:
-```ruby
+```asm
 Gem::Specification.new do |s|
   ...
   # Turn off the OTP code for pushing the gem
@@ -84,7 +88,7 @@ Gem::Specification.new do |s|
 end
 ```
 
-6) Looks like we're ready to go. Now create a test issue and run all the commands you want to use.
+6) It looks like we're ready to go. Now create a test issue and run all the commands you want to use.
 
 <div id="rust">
   <h2>Here it goes for Rust project.</h2>
@@ -95,7 +99,7 @@ The first three steps will be very similar.
 1) Go to [creates.io](https://crates.io/settings/tokens) and get the API key.
 
 2) Do the same thing as described in step `3` in Ruby, for example, let's create `crates-credentials` without the extension:
-```toml
+```asm
 [registry]
 token = "plase_your_token"
 ```
@@ -134,11 +138,11 @@ release:
     cargo --color=never publish
 ```
 4) Now open your `Cargo.toml` and set right `version`:
-```toml
+```asm
 version = "0.0.0"
 ```
 
-5) Nice, now we ready to go!
+5) Nice, now we are ready to go!
 
 Thank you for your attention! If you find a mistake or something like this, if you just have a question, then write in the comments!
 

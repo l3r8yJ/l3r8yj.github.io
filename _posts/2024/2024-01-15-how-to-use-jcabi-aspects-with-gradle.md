@@ -34,7 +34,7 @@ dependencies {
     aspect("com.jcabi:jcabi-aspects:${latestVersion}")
 }
 ```
-For most cases it should be enough. But if you have some plugins, which have their own `compile` tasks, you can face a problem like:
+For most cases, it should be enough. But if you have some plugins, which have their own `compile` tasks, you can face a problem like:
 ```asm
 Execution failed for task ':service-name:someCompileTask'.
 > Cannot infer AspectJ class path because no AspectJ Jar was found on class path

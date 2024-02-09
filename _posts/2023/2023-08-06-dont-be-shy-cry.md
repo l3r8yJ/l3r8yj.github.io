@@ -17,7 +17,7 @@ Please tell me, how often do you see someone's code that doesn’t make your sto
 
 <img weight="520" title="Crying guy" alt="Crying guy" src="/assets/images/crying-guy.jpeg">
 
-## Just go cry!
+## Go cry!
 You need to find the person who wrote this work of art and the person who approved it –
 very often these people are in your team.
 Then you go to GitHub, GitLab, Jira etc. and create a ticket for them,
@@ -34,8 +34,7 @@ You have to understand these things;
 all the code that you write at work will be read by someone, will be maintained by someone.
 Tests which you write will fail on someone’s code change, 
 and when this guy or girl tries to find reason why tests failed, they won't have
-to spend 2-3 hours to make clear why you’re comparing dto1 and dto2 in test called `compareTest`.
-
+to spend 2–3 hours to make clear why you’re comparing dto1 and dto2 in test called `compareTest`.
 Also tell yourself, never, never do this.
 ```asm
 @Test
@@ -107,18 +106,14 @@ How are we supposed to maintain that?
 
 What if you don't have the right quality control tool –
 create one or add functionality to an existing one!
-
 This is a real example of how I found a bad code in my work project. 
 I forced the team to use [this](https://github.com/volodya-lombrozo/jtcop/) plugin
 and then contributed this tool to make my project impossible to build with this code.
-
 The Algorithm is simple:
 1. Create an [issue.](https://github.com/volodya-lombrozo/jtcop/issues/242)
 2. Send a [pull request.](https://github.com/volodya-lombrozo/jtcop/pull/249)
 3. Update tool to a new version with your contribution.
 4. Fix issues in your project to make it work again.
-
-<br/>
 
 These advices may seem pretty obvious to you, 
 and all this thing may sound like
@@ -128,5 +123,3 @@ you **do** things instead of **knowing** about the problem
 and nodding your head with a clever look.
 
 Thanks!
-
-

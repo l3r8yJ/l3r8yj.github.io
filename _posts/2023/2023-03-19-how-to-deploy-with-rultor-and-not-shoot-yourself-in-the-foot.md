@@ -31,7 +31,6 @@ The first thing that you need is to [create](https://issues.sonatype.org/secure/
 The second thing you need to create, is a **private** repository on [GitHub](https://github.com/new).
 
 After that, you must create a configuration file for rultor `.rultor.yml` and a folder where your secret files will be stored. The usual name for this is `assets`.
-
 Inside `.rultor.yml` you put the repositories that will be given access to your secrets:
 
 ```asm
@@ -53,14 +52,13 @@ secrets-repo-name
 **Attention** if you already installed `gpg` and created some key, you should delete it
 `gpg --delete-key "YOUR_OLD_KEY"`
 `gpg --delete-secret-key "YOUR_OLD_KEY"`
-
 Go to `~/.gnupg` and delete two files: `pubring.gpg` and `secring.gpg`, they may not exist.
 
 **Start**
 
 Well, you should [install](https://gnupg.org/download/index.html#sec-1-2) `gpg`
 
-After that you have to create new key:
+After that you have to create a new key:
 
   1. `gpg --full-gen-key`
 
@@ -298,4 +296,4 @@ Now you can go to some issue and try `@rultor release`!
 
 <br/>
 
-*Thank you, I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.*
+*Thank you; I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.*

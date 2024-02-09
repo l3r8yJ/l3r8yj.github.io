@@ -14,9 +14,12 @@ tags:
   - programming
   - coding
 ---
-Unfortunately, in work we're using [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework). Not too long ago I was able to discover an interesting detail in our approach to exception handling.
+Unfortunately, in work,
+we're using [Spring Framework](https://en.wikipedia.org/wiki/Spring_Framework).
+Not too long ago I was able to discover an interesting detail in our approach to exception handling.
 <img height="420" title="Catching guy" alt="Catching guy" src="/assets/images/catch.gif">
-Usually it looks like some class (most often a service) throws an exception. There is an exception handler in another part of the program that does the job.
+Usually it looks like some class (most often a service) throws an exception.
+There is an exception handler in another part of the program that does the job.
 ```asm
 // class that throws
 public class DrinkService {
@@ -46,10 +49,8 @@ And user of our API gets response like
 ```
 So, first of all, this looks like a mess. You probably didn't want to read this code, or you had to struggle to realize what is written here.
 But that's beside the point, just a quick note.
-
-Let's look at it from the other side. When a programmer writes the `throw` keyword, he knows that somewhere in the program he has a piece of code that will be executed. Looks familiar, doesn't it?
-
-To refresh your memory take a look at this
+Let's look at it from the other side. When a programmer writes the `throw` keyword, he or she knows that somewhere in the program he or she has a piece of code that will be executed. Looks familiar, doesn't it?
+To refresh your memory, take a look at this
 ```asm
 _start:
     ; Entry point of the program
@@ -77,7 +78,7 @@ loop_exit:
     int 0x80         ; Call kernel
 ```
 Take a closer look at the `jmp` keyword, it does the same thing as `throw`. In fact, **we are still using assembler instructions, in 2023**. It seems we still live in a procedural paradigm.
-I don't think it can be avoided in Java, but for example in Rust they handle errors as follows
+I don't think it can be avoided in Java, but for example, in Rust they handle errors as follows
 ```asm
 use std::fs::File;
 
@@ -94,7 +95,6 @@ fn main() {
 }
 ```
 In my opinion, this looks much better. First, you can see where the error was handled. Second, it obliges you to handle the exception yourself.
-
 Unfortunately, the errors in [EOLANG](https://www.eolang.org/) have the same `goto` or `jmp` way of thinking (example was taken from [here](https://news.eolang.org/2022-07-18-error-and-try-catch.html)).
 ```asm
 [x] > check
