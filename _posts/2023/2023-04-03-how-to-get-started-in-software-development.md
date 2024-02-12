@@ -93,7 +93,7 @@ These books will break down your understanding of OOP.
 - [Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230). Will help you with simple algorithms.
 - [The Definitive ANTLR 4 Reference](https://www.amazon.com/Definitive-ANTLR-4-Reference/dp/1934356999). A well-written guide to ANLTR4.
 - [Dragon Book](https://www.amazon.com/exec/obidos/ASIN/0321486811/acmorg-20). For those who want to dive into compilers.
-- [Crafting Interpreters](https://craftinginterpreters.com/) Very well written book about interpreter development.
+- [Crafting Interpreters](https://craftinginterpreters.com/). Very well written book about interpreter development.
 
 ## Summary
 
