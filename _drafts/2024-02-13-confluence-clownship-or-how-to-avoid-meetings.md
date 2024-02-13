@@ -111,5 +111,6 @@ scripts which are described inside of `build.gradle.kts`.
 After generation and publishing, you can add these contracts as dependencies in your microservices.
 All you need it's just set up a publication inside of `build.gradle.kts` and 
 add [gradle-contracts-generator](https://github.com/l3r8yJ/contracts-generator-plugin) plugin.
-Plugin will generate `feign` clients, `dto`s and API interfaces marked with [Spring](https://spring.io/) annotations. 
+Plugin will generate `feign` clients, `dto`s and API interfaces marked with [Spring](https://spring.io/) annotations
+and publish them with a _specific version_. 
 The Plugin will be published soon, so stay tuned! 
