@@ -13,9 +13,8 @@ tags:
 How often have you been annoyed by crappy written documentation
 in [Confluence](https://www.atlassian.com/software/confluence)?
 All these endless wiki pages nested inside each other until your monitor runs out.
-Maybe you can remember finding two pages on the same topic that contradict each other?
-When your codebase matches with confluence wiki, only 10–20%
-of the actual codebase state.
+Do you remember what it's like to find two pages on the same topic that contradict each other;
+or your codebase matches with confluence wiki, only 40–60% of the actual codebase state?k
 But much better if analysts never heard about formatting before!
 So, what is the reason for it?
 
@@ -29,9 +28,10 @@ that they had documentation version control, and in some sense, they don't have 
 validate their expressions.
 > A subtle hint at statically typed languages.
 
-Yes, they had some review and practices, but mainly it's happening from "business" people,
+Yes, they had some review and practices,
+but usually analysts receive a review of documentation from business people,
 not from tech guys, not from the people who are going to develop using this documentation.
-Imagine if they had some sort of CI/CD pipeline that checks their documentation,
+Imagine if they had some sort of CI/CD pipeline that checks their artifacts, 
 applying some linting and checkstyle.
 Life would be much better.
 
