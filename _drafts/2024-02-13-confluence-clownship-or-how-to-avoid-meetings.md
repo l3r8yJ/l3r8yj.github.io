@@ -55,7 +55,7 @@ reject any nonsense bullshit in text.
 
 <em/>
 
-# How to dodge meetings & DTOs?
+# Why does control help us dodge meetings?
 The most interesting part of the blog post.
 To avoid meetings between programmers and analysts,
 we need to force analysts to write documentation which is similar to the code.
