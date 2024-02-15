@@ -21,7 +21,7 @@ So, what is the reason for it?
 <img width="300" title="Productivity" alt="Productivity" src="/assets/images/making_progress_2x.png">
 
 # Why?
-In my opinion, the main reason is – lack of control.
+In my opinion, the main reason is – lack of discipline and control.
 Comparing with software development,
 it's hard to imagine that analysts are cross-reviewing each other,
 that they had documentation version control, and in some sense, they don't have any "types" that can
