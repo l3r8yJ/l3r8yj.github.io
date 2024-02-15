@@ -126,9 +126,8 @@ What exactly will be produced?
    for outer clients, that will send requests to our service
 
 After generation and publishing, you can add these contracts as dependencies in your microservices.
-Everything that you need is just set up a publication inside of `build.gradle.kts` and 
+Everything that you need to do is – just set up a publication inside of `build.gradle.kts` and 
 add [gradle-contracts-generator](https://github.com/l3r8yJ/contracts-generator-plugin) plugin.
-Plugin will publish them with a specific version. 
 _The Plugin will be published soon, so stay tuned!
 Please put a star if you are waiting for this plugin,
 it would be some kind of signal that someone needs it and should be published faster!_
