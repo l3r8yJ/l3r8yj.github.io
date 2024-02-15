@@ -47,7 +47,7 @@ beat up on clumsy hands that can't format a piece of text properly.
 The Third step, gates into a Heaven – code review process.
 For now, we are close to heaven and developers can control 
 everything that comes into knowledge base, looks cool, isn't it?
-All issues that were unclear are now resolved during the review process,
+All issues, which were unclear, are now resolved during the review process,
 rather than at the time of development, thereby reducing the chance of a meeting.
 Now, when we come to totalitarianism in documentation, 
 i.e. a quality gate was built – any documentation manipulations are under our control, and you can
