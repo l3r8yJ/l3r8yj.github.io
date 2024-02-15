@@ -14,7 +14,7 @@ How often have you been annoyed by crappy written documentation
 in [Confluence](https://www.atlassian.com/software/confluence)?
 All these endless wiki pages nested inside each other until your monitor runs out.
 Do you remember what it's like to find two pages on the same topic that contradict each other;
-or your codebase matches with confluence wiki, only 40–60% of the actual codebase state?k
+or your codebase matches with confluence wiki, only 40–60% of the actual codebase state?
 But much better if analysts never heard about formatting before!
 So, what is the reason for it?
 
