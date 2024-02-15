@@ -32,12 +32,15 @@ sass:
 
 markdown: kramdown
 
+
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-admin
+  - github-pages
 
 exclude:
   - Gemfile
