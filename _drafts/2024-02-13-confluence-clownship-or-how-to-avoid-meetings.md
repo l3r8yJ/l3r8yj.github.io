@@ -42,7 +42,7 @@ to git repository as [markdown](https://en.wikipedia.org/wiki/Markdown) files.
 So, if we have a structured format – markdown, it means that we can validate it. 
 The **Second step** toward God is to add a CI/CD pipeline with linter and checkstyle to 
 beat up on clumsy hands that can't format a piece of text properly.
-The **Third step**, gates into a Heaven – code review process.
+The **Third step**, gates into Heaven – code review process.
 For now, we are close to heaven and developers can control 
 everything that comes into knowledge base, looks cool, isn't it? 
 Now, when we come to totalitarianism in documentation, 
