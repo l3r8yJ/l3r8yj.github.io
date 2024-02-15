@@ -135,8 +135,8 @@ it would be some kind of signal that someone needs it and should be published fa
 <em/>
 
 # Pros and Cons
-Let's start with Cons.
-1. The main "minus" is the analysts in your team,
+Let's start with Cons
+1. The main "disadvantage" is the analysts in your team,
    if they have any skill issues, it will be challenging to get them to work inside such a process
 2. You may forget to update the contracts' dependency version periodically
 3. Analysts should go further than developers in 1–2 sprints. 
