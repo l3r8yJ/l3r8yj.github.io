@@ -37,7 +37,7 @@ Life would be much better.
 
 <em/>
 
-# How to be closer to ~~heaven or hell~~ software development?
+# How to take control of documentation?
 So, I want to share the experience of our team that successfully avoids this confluence hell...
 The First step toward purification is – moving all your documentation 
 to git repository as [markdown](https://en.wikipedia.org/wiki/Markdown) files. 
@@ -102,19 +102,20 @@ contracts-repo/
 |-- build.gradle.kts
 |-- settings.gradle.kts
 ```
-- `common` – directory for common components that can be referenced from any directories
+- `common` – directory for common components that can be referenced from any directories 
+  of contracts-repo
 - `microservices` – directory for each microservice, contains folders named like services in your application
 - `templates` – template for microservice
-  - `schema` – directory for graphql schemas
-  - `db` – schema description in `sql`
+  - `schema` – directory for `.graphql` schemas
+  - `db` – directory for schemas' descriptions in `.sql` scripts
 - `openapi.yaml` – openapi description of your API
 - `readme.md` – file for description of anything that happens inside your microservice; has to be named same as microservice.
 - `build.gradle.kts`, `settings.gradle.kts` – default files for [Gradle](https://gradle.org/) project.
 
 # How it works?
 Boilerplate code from OpenAPI and GraphQL schemas will be generated.
-Each directory inside `microservices`, `kafka`is publishing as `jar`.
-The `common` directory also would be published as separate `jar`.
+All directories inside `microservices`, `kafka` will be published as separate `JAR`s.
+The `common` directory also would be published as separate `JAR`.
 What exactly will be produced?
 1. `DTO`s according to types that where declared
 2. API `interfaces`, marked with Swagger and Spring annotations, like
@@ -145,6 +146,7 @@ What about Pros?
    like [Writerside](https://www.jetbrains.com/writerside/?utm_source=product&utm_medium=link&utm_campaign=TBA),
    [IntelliJ IDEA](https://www.jetbrains.com/idea/),
    [VS Code](https://code.visualstudio.com/), etc. 
-4. No extra work – once it's described, once published and used, developers don't need to
+4. All migrations will be defined in one place 
+5. No extra work – once it's described, once published and used, developers don't need to
    write any boilerplate code as `DTO`
-5. Versioning – you can switch versions of your API back and forth
+6. Versioning – you can switch versions of your API back and forth
