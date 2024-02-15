@@ -35,21 +35,6 @@ layout: default
             });
     </script>
     <div>
-      <input type="hidden" id="shortUrl" value="https://www.l3r8y.ru{{ page.short-url }}">
-      <a href="#" id="copyLink">Copy post link</a>
-
-      <script>
-        document.getElementById('copyLink').addEventListener('click', event => {
-          event.preventDefault();
-          const shortUrl = document.getElementById('shortUrl');
-          shortUrl.select();
-          shortUrl.setSelectionRange(0, 99999);
-          document.execCommand('copy');
-          window.getSelection().removeAllRanges();
-        });
-      </script>
-    </div>
-    <div>
       <a href="https://news.ycombinator.com/submit">Submit</a> to Hacker News
     </div>
     <div class="post-date">

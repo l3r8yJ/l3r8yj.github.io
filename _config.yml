@@ -31,8 +31,6 @@ sass:
   style: expanded # compressed, compact, expanded or compressed
 
 markdown: kramdown
-shorts:
-  permalink: :year:month:day:letter.html
 
 plugins:
   - jekyll-feed
@@ -40,7 +38,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-admin
-  - jekyll-shorts
 
 exclude:
   - Gemfile
