@@ -46,7 +46,9 @@ The Second step toward God is – to add a CI/CD pipeline with linter and checks
 beat up on clumsy hands that can't format a piece of text properly.
 The Third step, gates into a Heaven – code review process.
 For now, we are close to heaven and developers can control 
-everything that comes into knowledge base, looks cool, isn't it? 
+everything that comes into knowledge base, looks cool, isn't it?
+All issues that were unclear are now resolved during the review process,
+rather than at the time of development, thereby reducing the chance of a meeting.
 Now, when we come to totalitarianism in documentation, 
 i.e. a quality gate was built – any documentation manipulations are under our control, and you can
 reject any nonsense bullshit in text.
@@ -141,7 +143,8 @@ Let's start with Cons.
 What about Pros?
 1. First of all, there is a single documents' format controlled by CI/CD
 2. Ability to review any changes in documentation – all changes coming from 
-   [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+   [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+   In general, here we're getting all benefits from [git](https://git-scm.com/).
 3. Opportunity to write documentation in modern IDEs or code editors, 
    like [Writerside](https://www.jetbrains.com/writerside/?utm_source=product&utm_medium=link&utm_campaign=TBA),
    [IntelliJ IDEA](https://www.jetbrains.com/idea/),
