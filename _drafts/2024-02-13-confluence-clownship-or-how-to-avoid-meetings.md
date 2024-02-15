@@ -1,5 +1,5 @@
 ---
-title: Confluence clownship or How to avoid meetings?
+title: Confluence clownship or How to avoid meetings and DTOs?
 layout: post
 date: '2024-02-13'
 last_modified_at: '2024-02-13'
@@ -14,35 +14,37 @@ How often have you been annoyed by crappy written documentation
 in [Confluence](https://www.atlassian.com/software/confluence)?
 All these endless wiki pages nested inside each other until your monitor runs out.
 Maybe you can remember finding two pages on the same topic that contradict each other?
-It is even better when your codebase matches with confluence wiki only 10–20%
-of the actual codebase state. 
-Or when analytics guys never heard about **formatting** before? 
+When your codebase matches with confluence wiki, only 10–20%
+of the actual codebase state.
+But much better if analysts never heard about formatting before!
 So, what is the reason for it?
 
 <img width="300" title="Productivity" alt="Productivity" src="/assets/images/making_progress_2x.png">
 
 # Why?
-I think the main reason is lack of control.
+In my opinion, the main reason is – lack of control.
 Comparing with software development,
 it's hard to imagine that analysts are cross-reviewing each other,
 that they had documentation version control, and in some sense, they don't have any "types" that can
 validate their expressions.
 > A subtle hint at statically typed languages.
 
-Imagine if they had some sort of CI/CD pipeline that checks their manual documentation work.
-Applying some linting and checkstyle to documents.
+Yes, they had some review and practices, but mainly it's happening from "business" people,
+not from tech guys, not from the people who are going to develop using this documentation.
+Imagine if they had some sort of CI/CD pipeline that checks their documentation,
+applying some linting and checkstyle.
 Life would be much better.
 
 <em/>
 
-# How to be closer to ~~heaven~~ software development?
-So, I want to share the experience of our team that successfully avoids this confluence **hell**.
-The **First step** toward purification is moving all your documentation 
+# How to be closer to ~~heaven or hell~~ software development?
+So, I want to share the experience of our team that successfully avoids this confluence hell...
+The First step toward purification is – moving all your documentation 
 to git repository as [markdown](https://en.wikipedia.org/wiki/Markdown) files. 
 So, if we have a structured format – markdown, it means that we can validate it. 
-The **Second step** toward God is to add a CI/CD pipeline with linter and checkstyle to 
+The Second step toward God is – to add a CI/CD pipeline with linter and checkstyle to 
 beat up on clumsy hands that can't format a piece of text properly.
-The **Third step**, gates into a Heaven – code review process.
+The Third step, gates into a Heaven – code review process.
 For now, we are close to heaven and developers can control 
 everything that comes into knowledge base, looks cool, isn't it? 
 Now, when we come to totalitarianism in documentation, 
@@ -51,28 +53,33 @@ reject any nonsense bullshit in text.
 
 <em/>
 
-# How to avoid any meetings?
+# How to dodge meetings & DTOs?
 The most interesting part of the blog post.
 To avoid meetings between programmers and analysts,
 we need to force analysts to write documentation which is similar to the code.
-It will look native for programmer.
-Description of databases is in `sql` files instead of dumb tables in a confluence document.
-Description of logic is in `md` files referencing each other in repository.
-API specification in `OpenAPI` or `GraphQL` schemas.
+It will look native for programmer
+and will reduce the number of misunderstandings between developer and analyst.
+Description of databases is in [SQL](https://en.wikipedia.org/wiki/SQL) scripts,
+logic is in Markdown format, API specifications in [OpenAPI](https://swagger.io/specification/)
+or [GraphQL](https://graphql.org/) schemas. 
 Developers just look into the repository and see familiar things,
-instead of rereading some paper around 30 times.
+instead of struggling with wiki-pages, tables, etc. In the next sections we will see how this
+approach can help us to avoid writing boilerplate code... 
 
 <em/>
 
 # Implementation
-Unfortunately, it's only relevant for Kotlin or Java developers,
+Unfortunately we use [Spring](https://spring.io/),
+that's why the tech part is
+only relevant for [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) developers,
 but you can read it, get some ideas and implement them using any tech-stack.
 All the tools we're used here are quite popular.
 Imagine if your analysts were writing specifications for API, which magically transforms in code,
 that you can use.
 You might hear about
 [API-first](https://blog.dreamfactory.com/api-first-the-advantages-of-an-api-first-approach-to-app-development/)
-approach? — We will abuse it at maximum level.
+approach?
+— We will abuse it at maximum level.
 First of all, you need to organize your repository like this:
 ```asm
 contracts-repo/
@@ -105,17 +112,21 @@ contracts-repo/
 - `build.gradle.kts`, `settings.gradle.kts` – default files for [Gradle](https://gradle.org/) project.
 
 # How it works?
-Each directory inside `microservices`, `kafka`
-is publishing as `jar` and all `common` directory is also publishing as single `jar`.
-All codegen from openapi and graphql schemas is
-generated with several scripts which are described inside of `build.gradle.kts`. 
+Boilerplate code from OpenAPI and GraphQL schemas will be generated.
+Each directory inside `microservices`, `kafka`is publishing as `jar`.
+The `common` directory also would be published as separate `jar`.
+What exactly will be produced?
+1. `DTO`s according to types that where declared
+2. API `interfaces`, marked with Swagger and Spring annotations, like
+   `@Controller`, `@PostMapping`, `@RequestBody`, etc.
+3. [Feign clients](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
+   for outer clients, that will send requests to our service
+
 After generation and publishing, you can add these contracts as dependencies in your microservices.
-All you need it just set up a publication inside of `build.gradle.kts` and 
+Everything that you need is just set up a publication inside of `build.gradle.kts` and 
 add [gradle-contracts-generator](https://github.com/l3r8yJ/contracts-generator-plugin) plugin.
-Plugin will generate `feign` clients,
-`DTO`s and API `interfaces` marked with [Spring](https://spring.io/) annotations
-and publish them with a specific version. 
-The Plugin will be published soon, so stay tuned! 
+Plugin will publish them with a specific version. 
+_The Plugin will be published soon, so stay tuned!_
 
 <em/>
 
@@ -124,10 +135,16 @@ Let's start with Cons.
 1. The main "minus" is the analysts in your team,
    if they have any skill issues, it will be challenging to get them to work inside such a process
 2. You may forget to update the contracts' dependency version periodically
+3. Analysts should go further than developers in 1–2 sprints. 
 
 What about Pros?
 1. First of all, there is a single documents' format controlled by CI/CD
-2. Ability to review any changes in documentation
-3. No extra work – once it's described, once published and used, developers don't need to
-   write any boilerplate code
-4. Versioning – you can switch versions back and forth
+2. Ability to review any changes in documentation – all changes coming from 
+   [pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+3. Opportunity to write documentation in modern IDEs or code editors, 
+   like [Writerside](https://www.jetbrains.com/writerside/?utm_source=product&utm_medium=link&utm_campaign=TBA),
+   [IntelliJ IDEA](https://www.jetbrains.com/idea/),
+   [VS Code](https://code.visualstudio.com/), etc. 
+4. No extra work – once it's described, once published and used, developers don't need to
+   write any boilerplate code as `DTO`
+5. Versioning – you can switch versions of your API back and forth
