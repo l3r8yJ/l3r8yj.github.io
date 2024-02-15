@@ -70,7 +70,7 @@ approach can help us to avoid writing boilerplate code...
 
 <em/>
 
-# Example
+# Boilerplate dodging
 Unfortunately we use [Spring](https://spring.io/),
 that's why the tech part is
 only relevant for [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) developers,
