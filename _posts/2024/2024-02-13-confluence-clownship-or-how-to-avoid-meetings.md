@@ -123,7 +123,7 @@ What exactly will be produced?
 2. API `interfaces`, marked with Swagger and Spring annotations, like
    `@Controller`, `@PostMapping`, `@RequestBody`, etc.
 3. [Feign clients](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
-   for outer clients, that will send requests to our service
+   for outer clients, that will communicate with our service
 
 After generation and publishing, you can add these contracts as dependencies in your microservices.
 Everything that you need to do is – just set up a publication inside of `build.gradle.kts` and 
