@@ -4,9 +4,11 @@ layout: page
 permalink: "/pets/"
 ---
 
-Some of these projects are in development, and they are still alive. I also have a lot of "repository notes" for my future ideas. But for some reason my hands haven't reached them yet.
+Some of these projects are in development, and they are still alive.
+I also have a lot of "repository notes" for my future ideas.
+But for some reason, my hands haven't reached them yet.
 
-Be glad if you will submit a pull request!
+Be glad if you submit a pull request!
 
 
 <br/>
@@ -17,7 +19,7 @@ Be glad if you will submit a pull request!
 <a href="https://www.elegram-api.ru"><b>Elegram-api</b></a> (Java) A library for interacting with the telegram bot api in an OOP style.
 
 
-<img inline-image alt="logo" src="https://raw.githubusercontent.com/l3r8yJ/sa-tan/8f6e97d0287f4f922b6cd685548490a48e26c496/s8an.svg" height="140px" /> <a href="https://www.l3r8y.ru/sa-tan/">**Sa-tan**</a> (Java) Maven plugin to check mutability.
+<img inline-image alt="logo" src="https://raw.githubusercontent.com/l3r8yJ/oop-cop/8f6e97d0287f4f922b6cd685548490a48e26c496/s8an.svg" height="140px" /> <a href="https://www.l3r8y.ru/oop-cop/">**oop-cop**</a> (Java) Maven plugin for static analysis
 
 
 <img inline-image alt="logo" src="/assets/images/new-jini.svg" height="100px" /> <a href="https://www.l3r8y.ru/jini.github/"><b>Jini</b></a> (Ruby) Gem which helps you build an XPATH and then modify its parts via a simple fluent interface.
