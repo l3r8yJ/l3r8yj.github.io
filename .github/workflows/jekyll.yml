@@ -7,15 +7,12 @@ on:
   pull_request:
     branches:
       - master
+concurrency:
+  group: jekyll-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   jekyll:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.0.0
-      - run: gem install webrick
-      - run: gem install faraday-retry
-      - run: bundle update
-      - run: bundle exec jekyll build
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: l3r8yJ/l3r8yj.github.io@master
