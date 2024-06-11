@@ -32,7 +32,7 @@ because the tester has to test in an environment that he is used to.
 ## Spring Boot starer
 
 Here I'm introducing a super-simple spring-boot starter that allows us to test the role model
-via `http` header.
+via `http` header. 
 spring-x-roles-authorities-starter](https://github.com/l3r8yJ/spring-x-roles-authorities-starter)
 allows
 you to simply add the `X-Roles` header to your request, and after authorization, the roles that you
