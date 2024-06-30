@@ -3,7 +3,9 @@
   <div class="posts-list-item">
     <span class="posts-list-item-name float-left">
         <b>
-          <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
+          <span class="title">
+            <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
+          </span>
         </b>
         <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
         <a style="text-decoration: none; " href="{{ site.baseurl }}{{ post.url }}"> <i>Continue...</i> </a>
