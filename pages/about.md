@@ -11,8 +11,6 @@ Well, as a software developer, I _have to write code_, and I [do it](https://git
 My main activity is contributing to open source projects: [**Objectionary**](https://github.com/objectionary), [**EO-CQRS**](https://github.com/eo-cqrs). Also I have my own [projects](/pets/). Perhaps you will also find them interesting. Therefore, you are always welcome to send pull request!
 <br/>
 
-I study at the university. I'm majoring in software engineering. My free time is filled with reading books and watching various IT conferences. As for entertainment, I am fond of volleyball and playing the guitar.
-
 ![pic](/assets/images/about.png)
 
 <br/>
