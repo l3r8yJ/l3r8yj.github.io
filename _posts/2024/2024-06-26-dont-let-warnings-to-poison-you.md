@@ -17,6 +17,9 @@ the decision has been made, pull request is open, and all that's left is to merg
 But the rule that was added is marked as a _warning_. This fact confused me a little bit, that's
 why...
 
+So, there is an original
+link – [github.com/fakehub/pull/89](https://github.com/h1alexbel/fakehub/pull/89#pullrequestreview-2190111637)
+
 <img width="500" title="Definitely" alt="Definitely" src="https://imgs.xkcd.com/comics/definitely.png">
 
 ## Purpose of linter
