@@ -41,6 +41,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-admin
   - github-pages
+  - jekyll-plantuml
 
 exclude:
   - Gemfile
