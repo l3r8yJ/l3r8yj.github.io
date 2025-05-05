@@ -16,7 +16,7 @@ Let’s dig into the development process a bit. How does it usually look? First 
 ## Don’t wait—act!
 Don’t be lazy. If you see that your developer is taking on a new task, open it, find the analyst’s documentation, and start writing test cases. Imagine a robot reading your test cases and doing exactly what they specify. I believe this approach will help you transition to automated testing.
 
-<br/>
+
 
 ## Make calls your enemy
 Whenever you’re about to call someone on the team to clear up an ambiguity, pause and ask yourself:
@@ -28,7 +28,7 @@ Whenever you’re about to call someone on the team to clear up an ambiguity, pa
 
 > **Important!** Use markup and formatting (headings, lists, code snippets, etc.) to make your comments easy to read.
 
-<br/>
+
 
 ## How to write a bug report so that the developer will want to fix the bug
 When a developer writes a test, they usually look at three things:
@@ -39,7 +39,7 @@ When a developer writes a test, they usually look at three things:
 
 If you provide these details to the developer, the bug-fixing process will be significantly faster!
 
-<br/>
+
 
 ## What not to do
 Avoid these things:

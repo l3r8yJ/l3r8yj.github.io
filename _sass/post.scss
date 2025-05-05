@@ -1,7 +1,11 @@
 @charset "utf-8";
 
 .title {
-  font-size: 1.5em;
+  font-size: 1em;
+}
+
+.post-content {
+  line-height: 1.8;
 }
 
 .post-title {
@@ -9,7 +13,7 @@
 }
 
 .post-content p {
-  line-height: 1.5;
+  line-height: 1.8;
 }
 
 .post-content img {

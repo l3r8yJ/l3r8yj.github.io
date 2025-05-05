@@ -26,11 +26,11 @@ And based on this definition, it became clear to me as a novice programmer that 
 Doesn't such an interpretation of this definition seem wrong?
 
 
-<br/>
+
 ## Let's look at an example of code in Java, since Java is one of the "object-oriented" languages.
-<br/>
+
 *Here we see the `Coefficient` class used to write the quadratic equation:*
-<br/>
+
 ```java
 public class Coefficient implements EquationElement {
   
@@ -48,9 +48,9 @@ public class Coefficient implements EquationElement {
 }
 ```
 
-<br/>
+
 *Here we see the class of the `Discriminante` used to solve the quadratic equation:*
-<br/>
+
 
 
 ```java
@@ -75,9 +75,9 @@ public class Discriminante implements EquationElement {
 
 }
 ```
-<br/>
+
 They both implement the `EquationElement` interface:
-<br/>
+
 ```java
 public Interface EquationElement {
         
@@ -88,7 +88,7 @@ public Interface EquationElement {
 
 As we see, both classes implement the value() method of the implemented interface and encapsulate the object's state. However, the implementation within the Coefficient class provides direct access to the data, while the implementation of the Discriminate class does not give the data directly, but modifies it in a certain way.
 
-<br/>
+
 
 So we see that in one case there is no hiding of data, and in the other case it just changes. Here we can get a more correct definition of encapsulation:
 

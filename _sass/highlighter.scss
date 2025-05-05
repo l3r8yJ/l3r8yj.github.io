@@ -4,13 +4,14 @@
   font-family: 'CMU TypeWriter';
   src: url('/assets/fonts/cmunbtl-webfont.woff');
 }
-code {
+
+code, pre {
   font-family: 'CMU TypeWriter', monospace;
+  line-height: 1;
 }
 
 .highlight > pre,
 pre.highlight {
-  line-height: 18px;
   margin: 10px 0;
   padding-left: 3px;
   border: 1px solid #ccc;

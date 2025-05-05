@@ -27,7 +27,7 @@ If they ignore you, go and cry to your boss with words like,
 Tell him how unprofessionally this work was done, it is impossible to maintain!
 Say everything you think about this code.
 
-<br/>
+
 
 ## Don't upset people
 You have to understand these things;
@@ -54,7 +54,7 @@ But even more questions and righteous anger were directed to the reviewer who sa
 
 I can’t imagine how irresponsible one would have to be to leave something like that.
 
-<br/>
+
 
 ## Don't cry twice
 
@@ -62,7 +62,7 @@ After you find something you can’t live with in this project,
 you should make your team add linter, checkstyle config, etc. to the project.
 Explain why no one should fall victim to your laziness, irresponsibility and slackness.
 
-<br/>
+
 
 ## Don't be lazy
 
@@ -100,7 +100,7 @@ public int calculateMatchedCount(
 ```
 How are we supposed to maintain that?
 
-<br/>
+
 
 ## Make tools more annoying
 

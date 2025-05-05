@@ -93,7 +93,7 @@ Here, on the other hand, we set the immutable essence of an object at "birth", s
 Now we treat the object as someone smart to rely on. In case we need to change the server, we simply create a new object through `updated()`. This way, those who worked with the object before won't be affected by the change, because it's immutable. As a nice bonus, such a class will be **thread-safe**!
 As a small summary, I see a lot of pluses in this approach, which seem to me more important than the disadvantages. You may also want to check out the books written on the subject. The first one is "[Object Thinking](http://davewest.us/product/object-thinking/)" by David West and the second one is "[Elegant Objects](https://www.yegor256.com/elegant-objects.html)", v1-v2, by Yegor Bugayenko.
 
-<br/>
+
 
 ## How to avoid setters?
 
@@ -188,6 +188,6 @@ class IAmBadBoy {
 
 Now `Sa-tan` won't say anything about it!
 
-<br/>
+
 
 *Thank you; I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.*

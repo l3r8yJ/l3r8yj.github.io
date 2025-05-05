@@ -15,7 +15,7 @@ Now I can see the dependencies for my project taking about 15 minutes to load. A
 This is a rather controversial topic of discussion. On the one hand, we hear that this education is a base, a foundation for future knowledge; on the other hand, there is an opinion that it is useless.
 *Important mention, I study at a regional university and I guess that in the best universities the situation is a little different, for the better*
 
-<br/>
+
 
 ## Higher education is important, right?
 
@@ -44,7 +44,7 @@ Let's say the quality of the code is not so important now, and the words above d
 Take a look at lab work. Lab work very often forces students to work according to instructions. Here is the instruction, here is the variant, here is the solution we want you to get. Under such conditions, a person simply stops thinking; all he or she learns is to repeat what is written in the instructions. Just dead brain work, no thinking, just stupid copying. People who are in such conditions for four years end up incapacitated. I would call it an injury to the ability to think and learn.
 For the third type, the university has nothing to offer, just nothing but a waste of time sitting in classrooms. I often hear that university teaches a person to learn. No matter how many times I hear this clown expression, each time it amazes me. If a person is able to get a job in the 1st or 2nd year of university, he probably already "knows how to learn". What does he have to learn at the university? 
 
-<br/>
+
 
 ## Professors
 
@@ -74,7 +74,7 @@ Often teachers have no clear criteria, only an emotional assessment.
 I liked you, I'll give you an A!
 A student's grade might be influenced by personal favoritism rather than objective standards.
 
-<br/>
+
 
 ## Insulting professors.
 
@@ -84,7 +84,7 @@ But the worst thing that could happen would be if such a professor found out tha
   >
   > *– Some Insulting Professor*
 
-<br/>
+
 
 ## Short summary
 What can I say at the end?

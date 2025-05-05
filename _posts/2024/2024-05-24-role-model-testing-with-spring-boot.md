@@ -27,7 +27,7 @@ By the way, we can't use swagger functions for testing because of GraphQL.
 We need a solution that can be used with different tools, different platforms, etc.
 because the tester has to test in an environment that he is used to.
 
-<br/>
+
 
 ## Spring Boot starer
 

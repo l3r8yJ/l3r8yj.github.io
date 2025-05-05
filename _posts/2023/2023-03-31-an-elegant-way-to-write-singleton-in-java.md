@@ -57,7 +57,7 @@ public final class Dummy {
   }
 }
 ```
-<br/>
+
 
 ## Performance
 
@@ -97,7 +97,7 @@ If we weren't in the real world, we could say that our code has no issues now.
 It's quite performant thanks to lazy initialization, and we get a single object instance.
 But there's a big problem, our implementation **isn't thread-safe.**
 
-<br/>
+
 
 ## Thread Safety
 
@@ -193,7 +193,7 @@ But I want to ask you one question.
 
 Honestly, I don't.
 
-<br/>
+
 
 ## Elegant way is
 
@@ -225,8 +225,8 @@ This is the complete solution, it is the Singleton pattern specification.
 We're still lazy, which means we're still **performing**, and we're **thread-safe** because we're **immutable**!
 This approach is called *initialization on demand holder idiom.*
 
-<br/>
+
 
 Thanks!
 
-<br/>
+

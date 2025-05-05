@@ -23,7 +23,7 @@ A small disclaimer for those who are against static analysis and code quality co
 However, this **does not** mean that static analysis is useless or that it cannot be effective in finding bugs and vulnerabilities in software.
 On a slightly more serious note, what makes a programming language *difficult to analyze*?
 
-<br/>
+
 
 ### Syntax sugar
 
@@ -37,13 +37,13 @@ This approach has many disadvantages. For example, the first one is that the ana
 But you're not much bound to the version of the language you're analyzing, as if you were analyzing the source code. And you don't have to parse source code files as you often do with *third-party* tools.
 So, do you remember this? Now add as much syntax sugar to your language as you can!
 
-<br/>
+
 
 ### Massive AST
 This point is very easy to understand, because the bigger your [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree) is, the harder it is to parse, lexify, etc. Imagine all these giant constructions nested in each other, sometimes it's just hard to understand what's written here. But try to analyze it...
 So you should increase your AST to [Statue of Unity](https://en.wikipedia.org/wiki/Statue_of_Unity) size.
 
-<br/>
+
 
 ### Mutability
 Well, when I talk about mutability in this context, I mean reassigning the same variable multiple times with parallel reading from it. The difficulty of analysis here lies not only in the equal sign.
@@ -66,7 +66,7 @@ Now, for each file we have only one way of a sequence.
 This piece of code is much easier to analyze, isn't it?
 Now you know that you need to ban immutability in your artwork from the world of programming languages.
 
-<br/>
+
 
 ### Multiple conditional flow
 How often do you see something like that:
@@ -91,7 +91,7 @@ If we merge each branch into one using the formula *(1)* with the previous condi
 I think you can still familiarize yourself with the concept of [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity).
 So do not forget this when you create your language. Make it impossible for the compiler to compile a program until a method contains at least three, and preferably four, `if` branches within it.
 
-<br/>
+
 
 ### Polymorphism
 What can you say about this quote?
@@ -133,7 +133,7 @@ Polymorphism is about making it hard to figure out what is going on inside, when
 How to resist polymorphism? We can use [Call Graph](https://en.wikipedia.org/wiki/Call_graph). This is just a list of possible targets for each function call statement. We need to look at the `act()` invocation and figure out which implementations it can go to. We do not know what was placed inside the `reqs` parameter. Therefore, in our case it will be both implementations, `RqSafe` and `RqUnsafe`.
 Going back to your brand new programming language, given the above, you need to make it impossible to write implementations within a single module.
 
-<br/>
+
 
 ### Conclusion
 Here I've listed a few things that make static analysis tricky, I'm sure it's not the whole list, but I found these things quite interesting. As I've said before, static analysis **can't be right**. So when we find a vulnerability, it's hard to present the correct results. Here is the dilemma between the two states:

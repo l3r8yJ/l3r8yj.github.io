@@ -18,7 +18,7 @@ Well, today I'm going to review two cases:
 1) [Ruby](#ruby) project, `@merge` and `@release`
 2) [Rust](#rust) project, `@merge` and `@release`
 
-<br/>
+
 
 <div id="ruby">
   <h2>Let's begin with configuration for a Ruby project.</h2>

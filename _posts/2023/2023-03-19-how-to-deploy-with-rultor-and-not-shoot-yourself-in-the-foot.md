@@ -20,7 +20,7 @@ Update! I was saved by Rultor today!
 
 This blog post is an addition to the [previous](/2023/02/22/complete-rultor-setup-guide) post for Java projects that will be published in [Maven Central](https://en.wikipedia.org/wiki/Apache_Maven). Well, if you are reading this, I assume you know about [Rultor](https://www.rultor.com/) and are trying to setup `@rultor release, tag is '1.0.0'`. But for some reason you can't. I'm here to help you deal with your helplessness. So let's begin...
 
-<br/>
+
 
 
 ### Register your groupId
@@ -294,6 +294,6 @@ release:
 
 Now you can go to some issue and try `@rultor release`!
 
-<br/>
+
 
 *Thank you; I hope this post was interesting for you, also you can correct me in the comments if I made mistakes, etc.*

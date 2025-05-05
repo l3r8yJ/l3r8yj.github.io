@@ -20,7 +20,7 @@ Buddy, there's one thing you need to know to get started. The thing is, **progra
 If you're still wondering if you should start, or if you don't think it's the right thing for you, then find something else to focus on. You'll just freak out while you're pushing yourself to do it.
 I am usually asked by novice Java programmers, so I will orient myself to them in this post.
 
-<br/>
+
 
 ## Practice
 My point is that even if you read all the books, blog posts, and articles in the world, *you won't become a real programmer*.
@@ -41,13 +41,13 @@ In addition, you can find someone already working, so he checks your project onc
 The most challenging thing here is to keep motivation at a high level.
 Because very often teams like the one described above fall apart after 1–4 weeks due to a lack of interest
 in working on the project.
-<br/>
+
 
 **I'm highly recommending you to watch this video**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dCn53X1I2R0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<br/>
+
 
 ## Use proper tools
 
@@ -58,7 +58,7 @@ I am talking about several things:
 
   2. [Stack Overflow](https://stackoverflow.com/) is a site where you should ask questions and possibly answer them. By learning to ask questions on this platform, you will develop the ability to express yourself clearly and correctly as a software engineer!
 
-<br/>
+
 
 ## Sources of knowledge
 I prefer books to other sources of information. You don't need to read books about the Spring framework, Hibernate, etc.
@@ -101,7 +101,7 @@ Here I have tried to describe how to get started as a software developer. Also, 
 
 > *Don't do something by pushing yourself – it will kill all interest and motivation!*
 
-<br/>
+
 
 ## Couple videos about Open Source
 
