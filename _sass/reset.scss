@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: 'Huiwen-MinchoGBK';
+  src: url('/assets/fonts/huiwen-mincho-gbk.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "Arno Pro";
   src: url('/assets/fonts/arno/ArnoPro-SmText.woff2');
   font-weight: normal;
@@ -34,17 +41,17 @@
 }
 
 b, strong {
-  font-family: 'Arno Pro Bold', serif;
+  font-family: 'Huiwen-MinchoGBK', serif;
 }
 
 em {
-  font-family: 'ARno Pro Italic', cursive;
+  font-family: 'Huiwen-MinchoGBK', cursive;
 }
 
 html,
 body {
-  font-family: 'Arno Pro', serif;
-  font-size: 20px;
+  font-family: 'Huiwen-MinchoGBK', serif;
+  font-size: 22px;
   height: 100%;
 }
 
