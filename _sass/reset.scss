@@ -41,21 +41,24 @@
 }
 
 b, strong {
-  font-family: 'Huiwen-MinchoGBK', serif;
+  font-family: 'Computer Modern Serif', serif;
+  font-weight: bold;
 }
 
 em {
-  font-family: 'Huiwen-MinchoGBK', cursive;
+  font-family: 'Computer Modern Serif', serif;
+  font-style: italic;
 }
 
 html,
 body {
-  font-family: 'Huiwen-MinchoGBK', serif;
+  font-family: 'Computer Modern Serif', serif;
   font-size: 22px;
   height: 100%;
 }
 
-code {
+code, pre, tt, kbd, samp {
+  font-family: 'Computer Modern Typewriter', monospace;
   font-size: 18px;
 }
 
