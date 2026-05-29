@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #1c1a15;
+    color: #e2d9c5;
+  }
+
+  a {
+    color: #c9b87a;
+  }
+
+  a:hover {
+    color: #8a7d56;
+  }
+
+  blockquote {
+    border-left-color: #5a5040;
+  }
+
+  hr {
+    border-color: #302c24;
+  }
+
+  tbody tr:hover {
+    background-color: #242018;
+  }
+
+  td {
+    border-bottom-color: #302c24;
+  }
+
+  th {
+    border-bottom-color: #3a3428;
+    background: #252018;
+  }
+
+  .container-header {
+    border-bottom-color: #3a3428;
+  }
+
+  .container-footer {
+    border-top-color: #3a3428;
+  }
+
+  .highlight,
+  .highlighter-rouge pre.highlight,
+  code.highlighter-rouge {
+    background-color: #231f18;
+    border-color: #3a3428;
+  }
+}
