@@ -10,23 +10,27 @@ tags:
 ---
 
 Let’s dig into the development process a bit. How does it usually look? First of all, the system analyst creates the documentation. The developer implements it, and then the tester validates the result. Looks pretty familiar, doesn’t it?
+The trouble is that problems surface only at the end, when they are most expensive to fix.
 
 <img height="500" title="TMNT in Java" alt="TMNT in Java" src="/assets/images/testatest.png">
 
 ## Don’t wait—act!
-Don’t be lazy. If you see that your developer is taking on a new task, open it, find the analyst’s documentation, and start writing test cases. Imagine a robot reading your test cases and doing exactly what they specify. I believe this approach will help you transition to automated testing.
+Don’t be lazy. If you see your developer taking on a new task, open it, find the analyst’s documentation, and start writing test cases. Imagine a robot reading your test cases and doing exactly what they specify.
+The precision a robot demands is exactly what test frameworks require—so the habit transfers directly.
+I believe this approach will help you transition to automated testing.
+Tester judgment—spotting edge cases, usability gaps, and context-dependent behavior—still matters; the robot metaphor covers only the deterministic, specifiable part.
 
 
 
 ## Make calls your enemy
-Whenever you’re about to call someone on the team to clear up an ambiguity, pause and ask yourself:
+Whenever you’re about to call someone to clear up an ambiguity about a requirement or a bug, pause and ask yourself:
 
 1. **What specific detail is missing** that would allow you to avoid the meeting?  
 2. **Write that missing detail or question in text**, then add it as a comment to the task it belongs to:
    - If it’s a question about the documentation, find the task where the analyst wrote it and leave your comment there.  
    - If you’ve discovered a bug in the developer’s implementation, find the corresponding task and add a new bug report as a comment.  
 
-> **Important!** Use markup and formatting (headings, lists, code snippets, etc.) to make your comments easy to read.
+> **Important!** Use markup and formatting (headings, lists, code snippets) to make your comments easy to read.
 
 
 
@@ -44,6 +48,8 @@ If you provide these details to the developer, the bug-fixing process will be si
 ## What not to do
 Avoid these things:
 
-- **Asking the developer how things should work:** It’s your responsibility to know how a feature should work; if you don’t, how can you test it?  
-- **Reporting bugs outside of the ticket:** Avoid informal bug discussions, as they waste time for you and your team.  
-- **Using vague phrases like “This does not work properly”:** ‘Properly’ is unclear—specify exactly what’s wrong.  
+- **Asking the developer how things should work:** It’s your responsibility to know how a feature should work; if you don’t, how can you test it? If the documentation is missing or wrong, report that gap in writing on the relevant task before testing.  
+- **Reporting bugs outside of the ticket:** Report bugs in the ticket, not in chat or verbally—informal reports vanish and cannot be tracked.  
+- **Using vague phrases like “This does not work properly”:** ‘Properly’ is unclear—specify exactly what’s wrong.
+
+Every one of these habits saves your teammates time they would otherwise spend in meetings, chasing vague reports, or re-explaining context—that is what makes their lives better.  
