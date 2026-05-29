@@ -4,9 +4,8 @@ layout: post
 date: '2025-04-22'
 last_modified_at: '2025-04-22'
 categories:
-  - development
-tags:
   - testing
+tags:
 ---
 
 Let’s dig into the development process a bit. How does it usually look? First of all, the system analyst creates the documentation. The developer implements it, and then the tester validates the result. Looks pretty familiar, doesn’t it?

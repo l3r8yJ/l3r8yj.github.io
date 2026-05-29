@@ -4,7 +4,8 @@ layout: post
 date: '2024-05-24'
 last_modified_at: '2024-05-24'
 categories:
-  - spring-boot
+  - testing
+  - java
 tags:
   - testing
   - spring-boot

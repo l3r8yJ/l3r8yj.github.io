@@ -4,9 +4,7 @@ layout: post
 date: '2023-10-15'
 last_modified_at: '2023-10-19'
 categories:
-  - exceptions
   - java
-  - coding
 tags:
   - exceptions
   - exception

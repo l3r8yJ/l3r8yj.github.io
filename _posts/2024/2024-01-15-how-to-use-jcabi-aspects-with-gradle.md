@@ -4,8 +4,9 @@ layout: post
 date: '2024-01-15'
 last_modified_at: '2024-01-15'
 categories:
-  - guide
+  - java
 tags:
+  - guide
   - jcabi-aspects
   - gradle
   - aop

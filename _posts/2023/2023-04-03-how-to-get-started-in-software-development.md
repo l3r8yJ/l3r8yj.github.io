@@ -4,13 +4,11 @@ layout: post
 date: '2023-04-03'
 last_modified_at: '2023-06-30'
 categories:
-  - development
-  - guide
+  - career
 tags:
-  - how to start
-  - junior programming
-  - how programming
-  - start programming
+  - guide
+  - junior
+  - getting-started
 ---
 
 <img height="430" title="Saving private Rayan" alt="Saving private Rayan" src="/assets/images/how-to-save.jpeg">

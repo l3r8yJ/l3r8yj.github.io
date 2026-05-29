@@ -4,9 +4,8 @@ layout: post
 date: '2025-05-15'
 last_modified_at: '2025-05-15'
 categories:
-  - development
-tags:
   - testing
+tags:
 ---
 
 > Every developer has sat through a 20 minute build,

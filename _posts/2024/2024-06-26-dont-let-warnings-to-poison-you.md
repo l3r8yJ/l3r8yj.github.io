@@ -4,7 +4,7 @@ layout: post
 date: '2024-06-26'
 last_modified_at: '2024-06-26'
 categories:
-  - development
+  - ci-cd
 tags:
   - building
   - CI/CD

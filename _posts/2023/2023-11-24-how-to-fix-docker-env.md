@@ -4,13 +4,10 @@ layout: post
 date: '2023-11-24'
 last_modified_at: '2023-11-24'
 categories:
-  - guide
+  - tools
 tags:
-  - exceptions
-  - exception
-  - java
-  - programming
-  - coding
+  - guide
+  - docker
 ---
 This is just a quick note. I've been changing my working environment a lot lately and making this fix for docker. It is needed to avoid the following problem when running tests for Spring application on M* series processors
 

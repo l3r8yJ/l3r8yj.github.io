@@ -4,7 +4,7 @@ layout: post
 date: '2023-02-27'
 last_modified_at: '2022-03-05'
 categories:
-- static analysis
+  - tools
 tags:
   - static analysis
   - compilers

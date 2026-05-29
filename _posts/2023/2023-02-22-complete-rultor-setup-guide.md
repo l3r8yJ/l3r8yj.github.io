@@ -4,8 +4,10 @@ layout: post
 date: '2023-02-22'
 last_modified_at: '2023-02-22'
 categories:
-- guide
-tags: blog-post
+  - ci-cd
+tags:
+  - guide
+  - blog-post
 ---
 ![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.javacodegeeks.com%2Fwp-content%2Fuploads%2F2014%2F09%2Flogo1.png&f=1&nofb=1&ipt=bd2c2dc11f87b075dcaf2e4fccde0de7ce57dada3e9a898ba3fda7439453cfc3&ipo=images)
 Well, if you are reading this, you probably know what [Rultor](https://doc.rultor.com/) is. 

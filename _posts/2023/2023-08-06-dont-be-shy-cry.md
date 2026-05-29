@@ -4,9 +4,7 @@ layout: post
 date: '2023-08-06'
 last_modified_at: '2023-08-06'
 categories:
-  - opensource
-  - report
-  - coding
+  - career
 tags:
   - opensource
   - bugs

@@ -4,8 +4,7 @@ layout: post
 date: '2023-02-21'
 last_modified_at: '2023-04-19'
 categories:
-- tools
-- environment
+  - tools
 tags: blog-post
 ---
 ## Let's see...

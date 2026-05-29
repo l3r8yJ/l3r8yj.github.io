@@ -4,7 +4,7 @@ layout: post
 date: '2023-06-05'
 last_modified_at: '2023-06-05'
 categories:
-- education
+  - career
 tags: blog-post
 ---
 
