@@ -44,6 +44,16 @@
     border-top-color: #3a3428;
   }
 
+  input[type="text"] {
+    background-color: #252018;
+    color: #e2d9c5;
+    border-color: #3a3428;
+  }
+
+  input[type="text"]::placeholder {
+    color: #7a7060;
+  }
+
   .highlight,
   .highlighter-rouge pre.highlight,
   code.highlighter-rouge {
