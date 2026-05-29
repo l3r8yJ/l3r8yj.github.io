@@ -1,20 +1,69 @@
 @charset "utf-8";
 
 @media screen and (max-width: 768px) {
-  /* reset default styles */
-  img {
-    width: 100%;
-    max-width: 300px;
+  html, body {
+    font-size: 16px;
   }
 
-  /* Posts list */
-  .list-pagination {
-    margin: 10px 0 5px 0;
+  .container-wrapper {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  .container-main {
+    width: 100%;
+  }
+
+  /* Header */
+  .header-info-name {
+    font-size: 1.4em;
+  }
+
+  .header-main-nav {
+    padding: 0;
+  }
+
+  .header-main-nav-item {
+    float: none;
+    display: inline-block;
+    margin: 0 6px 0 0;
+  }
+
+  /* Post list — stack date below title */
+  .posts-list-item {
+    display: block;
+  }
+
+  .posts-list-item-name {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+
+  .posts-list-item-date {
+    float: none;
+    display: block;
+    font-size: 0.85em;
+    opacity: 0.6;
+    margin-top: 2px;
+  }
+
+  /* Images */
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   /* Footer */
   .footer-copyright .float-left,
   .footer-copyright .float-right {
     float: none;
+    display: block;
+  }
+
+  /* Pagination */
+  .list-pagination {
+    margin: 10px 0 5px 0;
   }
 }
