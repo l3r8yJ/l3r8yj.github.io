@@ -1,38 +1,25 @@
 @charset "utf-8";
 
-.print-post-author {
-  display: none;
-}
-
 @media print {
-  /* Header */
-  .container-header {
+  .site-nav,
+  .site-footer,
+  .post-nav,
+  .post-actions,
+  #disqus_thread {
     display: none;
   }
 
-  /* Footer */
-  .container-footer {
-    display: none;
+  body {
+    max-width: none;
+    padding: 0;
+    color: #000;
+    background: #fff;
   }
 
-  /* Post */
-  .post-title {
-    text-align: center;
-  }
-
-  .post-author {
-    display: block;
-    text-align: center;
-  }
-
-  .post-info {
-    display: none;
-  }
-
-  /* Highlight */
+  pre,
   pre.highlight {
-    overflow-x: hidden;
-    word-wrap: break-word;
+    overflow-x: visible;
     white-space: pre-wrap;
+    word-wrap: break-word;
   }
 }

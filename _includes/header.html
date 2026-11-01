@@ -1,14 +1,14 @@
-<div class="header-info" style="text-decoration: none;">
-  <span class="header-info-name"><a href="/about/">{{ site.title }}</a></span>
-  <span class="header-info-desc">{{ site.description }}</span>
-</div>
-<nav class="header-nav">
-  <ul class="header-main-nav">
+<nav class="site-nav" aria-label="Site">
+  <a class="site-name" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <p class="site-desc">{{ site.description }}</p>
+  <ul class="site-links">
     {% for item in site.data.menus %}
-    <li class="header-main-nav-item">
-      <a href="{% if item.absoluteUrl != true %}{{ site.baseurl }}/{% endif %}{{ item.url }}">
+    {% capture item_url %}/{{ item.url }}{% endcapture %}
+    {% capture item_url_slash %}{{ item_url }}/{% endcapture %}
+    <li>
+      <a href="{{ site.baseurl }}{{ item_url }}"{% if page.url == item_url or page.url == item_url_slash %} aria-current="page"{% endif %}>
         {% if item.default %}
-          {{site.data.lang[site.language][item.default]}}
+          {{ site.data.lang[site.language][item.default] }}
         {% else %}
           {{ item.title }}
         {% endif %}
@@ -17,4 +17,5 @@
     {% endfor %}
   </ul>
   {% include search-google.html %}
+  <button class="theme-toggle" type="button">Dark mode</button>
 </nav>

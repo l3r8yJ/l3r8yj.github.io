@@ -1,29 +1,26 @@
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
+@charset "utf-8";
+
+.site-search {
+  margin: 0;
 }
 
-/* Style the form fields */
-label {
-  margin-bottom: 10px;
+.site-search input[type="text"] {
+  width: 100%;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+  font-size: 0.85rem;
 }
 
-input[type="text"] {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+.site-search input[type="text"]::placeholder {
+  color: var(--muted);
 }
 
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #3e8e41;
+.site-search input[type="text"]:focus {
+  border-color: var(--muted);
+  outline: 2px solid var(--fg);
+  outline-offset: 1px;
 }

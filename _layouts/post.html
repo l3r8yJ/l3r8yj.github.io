@@ -1,98 +1,73 @@
 ---
 layout: default
 ---
+
 <script defer>
-  window.onload = () => {
-    document
-      .querySelector(".container-main")
-      .querySelectorAll("a")
-        .forEach(link => {
-          link.setAttribute("rel", "noopener");
-          link.setAttribute("target", "_blank");
-        })
-  }
+  window.addEventListener("load", () => {
+    document.querySelectorAll(".post-content a").forEach((link) => {
+      link.setAttribute("rel", "noopener");
+      link.setAttribute("target", "_blank");
+    });
+  });
 </script>
-<article class="container-post">
-  <div class="post-title">
-    <h1>{{ page.title }}</h1>
-  </div>
-  {% if site.name %}
-  <div class="post-author print-post-author">
-    <span>{{ site.name }}</span>
-  </div>
-  {% endif %}
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">
+    <span>
+      {{ site.data.lang[site.language].post_write_date }}
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: '%Y-%m-%d' }}
+      </time>
+    </span>
+    {% if page.last_modified_at %}
+    <span>
+      {{ site.data.lang[site.language].post_update_date }}
+      {{ page.last_modified_at | date: '%Y-%m-%d' }}
+    </span>
+    {% endif %}
+    {% if page.categories.size > 0 %}
+    <span>
+      {{ site.data.lang[site.language].post_categories }}
+      {% for category in page.categories %}
+      <a href="{{ site.baseurl }}/categories#{{ category }}">{{ category }}</a>
+      {% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </span>
+    {% endif %}
+    {% if page.tags.size > 0 %}
+    <span>
+      {{ site.data.lang[site.language].post_tags }}
+      {{ page.tags | join: ', ' }}
+    </span>
+    {% endif %}
+  </p>
   <div class="post-content">
     {{ content }}
   </div>
-  <br>
-  <div class="post-info">
-    <script id="diffblog-plugin-script" async="false" src="https://diff.blog/static/js/diffblog_plugin_v1.js"></script> 
+  <div class="post-actions">
+    <a href="https://news.ycombinator.com/submit">Submit to Hacker News</a>
+    <script id="diffblog-plugin-script" async="false" src="https://diff.blog/static/js/diffblog_plugin_v1.js"></script>
     <script>
-            document.getElementById("diffblog-plugin-script").addEventListener("load", function () {
-                DiffBlog(
-                    "hu9gfrs2o3ad55qj792h5gmoybcnf637qtfaacufw2awbpkspo"
-                );
-            });
+      document
+        .getElementById("diffblog-plugin-script")
+        .addEventListener("load", function () {
+          DiffBlog("hu9gfrs2o3ad55qj792h5gmoybcnf637qtfaacufw2awbpkspo");
+        });
     </script>
-    <div>
-      <a href="https://news.ycombinator.com/submit">Submit</a> to Hacker News
-    </div>
-    <div class="post-date">
-      {{ site.data.lang[site.language].post_write_date}}
-      {{ page.date | date: '%Y-%m-%d' }}
-      {% if page.last_modified_at %}
-        ,
-        {{ site.data.lang[site.language].post_update_date}}
-        {{ page.last_modified_at | date: '%Y-%m-%d' }}
-      {% endif %}
-      .
-    </div>
-    {% if site.name %}
-    <div class="post-author">
-      {{ site.data.lang[site.language].post_author }}{{ site.name }}
-    </div>
-    {% endif %}
-    <div class="post-categories">
-      <span>{{ site.data.lang[site.language].post_categories }}</span>
-      {% for category in page.categories %}
-      <a
-        href="{{site.baseurl}}/categories#{{category}}"
-        class="post-category">
-        {{category}}
-      </a>
-      {% endfor %}
-    </div>
-    <div class="post-tags">
-      <span>{{ site.data.lang[site.language].post_tags }}</span>
-      {% for tag in page.tags %}
-      <span class="post-tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
-    <div class="post-other">
-      {% if page.next %}
-      <div>
-        <span>
-          {{ site.data.lang[site.language].post_next }}
-        </span>
-        <a href="{{ site.baseurl }}{{ page.next.url }}">
-          {{ page.next.title }}
-        </a>
-      </div>
-      {% endif %}
-      {% if page.previous %}
-      <div>
-        <span>
-          {{ site.data.lang[site.language].post_previous }}
-        </span>
-        <a href="{{ site.baseurl }}{{ page.previous.url }}">
-          {{ page.previous.title }}
-        </a>
-      </div>
-      {% endif %}
-    </div>
-    <br/>
-    {% if site.comments %}
-      {% include comments.html %}
-    {% endif %}
   </div>
+  <nav class="post-nav">
+    {% if page.previous %}
+    <a href="{{ site.baseurl }}{{ page.previous.url }}">
+      {{ site.data.lang[site.language].post_previous }}{{ page.previous.title }}
+    </a>
+    {% endif %}
+    {% if page.next %}
+    <a class="post-nav-next" href="{{ site.baseurl }}{{ page.next.url }}">
+      {{ site.data.lang[site.language].post_next }}{{ page.next.title }}
+    </a>
+    {% endif %}
+  </nav>
+  {% if site.comments %}
+    {% include comments.html %}
+  {% endif %}
 </article>

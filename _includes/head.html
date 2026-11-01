@@ -1,5 +1,4 @@
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 {% seo %}
 {% if site.keywords or page.tags %}
@@ -9,7 +8,6 @@
     site.keywords | join: ','
   }}{% endif %}" />
 {% endif %}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dreampulse/computer-modern-web-font@master/fonts.css" />
 <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.svg" />
 <link rel="apple-touch-icon" href="{{ site.baseurl }}/favicon.svg" />
 <link
@@ -25,10 +23,39 @@
   rel="stylesheet"
   type="text/css"
   href="{{ site.baseurl }}/assets/css/highlight.css" />
-
-<!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+<script>
+  (function () {
+    var root = document.documentElement;
+    try {
+      var stored = localStorage.getItem("theme");
+      if (stored === "dark" || stored === "light") root.dataset.theme = stored;
+    } catch (error) {}
+    document.addEventListener("DOMContentLoaded", function () {
+      var button = document.querySelector(".theme-toggle");
+      if (!button) return;
+      function active() {
+        return (
+          root.dataset.theme ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light")
+        );
+      }
+      function render() {
+        button.textContent = active() === "dark" ? "Light mode" : "Dark mode";
+      }
+      button.addEventListener("click", function () {
+        var next = active() === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try {
+          localStorage.setItem("theme", next);
+        } catch (error) {}
+        render();
+      });
+      render();
+    });
+  })();
+</script>
 {% if site.analytics %}
   {% include analytics.html %}
 {% endif %}

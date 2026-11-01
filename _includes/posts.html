@@ -1,36 +1,32 @@
-<div class="container-posts">
+<div class="post-list">
   {% for post in paginator.posts %}
-  <div class="posts-list-item">
-    <span class="posts-list-item-name float-left">
-        <b>
-          <span class="title">
-            <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
-          </span>
-        </b>
-        <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
-        <a style="text-decoration: none; " href="{{ site.baseurl }}{{ post.url }}"> <i>Continue...</i> </a>
-    </span>
-    <span class="posts-list-item-date float-right">
-      {{ post.date | date: '%Y-%m-%d' }}
-    </span>
-  </div>
-  <br/>
+  <article class="post-list-item">
+    <h2>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+    <p class="post-list-date">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+    </p>
+    <p class="post-excerpt">
+      {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+    </p>
+  </article>
   {% endfor %}
-  {% if paginator.total_pages > 1 %}
-  <div class="list-pagination">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="float-left">
-      {{ site.data.lang[site.language].paginator_previous }}
-    </a>
-    {% endif %}
-    <span class="page_number">
-      {{ site.data.lang[site.language].paginator_pages }}{{ paginator.page }} / {{ paginator.total_pages }}
-    </span>
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="float-right">
-      {{ site.data.lang[site.language].paginator_next }}
-    </a>
-    {% endif %}
-  </div>
-  {% endif %}
 </div>
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}">{{ site.data.lang[site.language].paginator_previous }}</a>
+  {% else %}
+  <span></span>
+  {% endif %}
+  <span class="page-number">
+    {{ site.data.lang[site.language].paginator_pages }}{{ paginator.page }} / {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}">{{ site.data.lang[site.language].paginator_next }}</a>
+  {% else %}
+  <span></span>
+  {% endif %}
+</nav>
+{% endif %}

@@ -1,32 +1,74 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: 'CMU TypeWriter';
-  src: url('/assets/fonts/cmunbtl-webfont.woff');
+  font-family: "Iosevka";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/iosevka/iosevka-latin-400-normal.woff2")
+    format("woff2");
 }
 
-code, pre {
-  font-family: 'CMU TypeWriter', monospace;
-  line-height: 1;
+@font-face {
+  font-family: "Iosevka";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/iosevka/iosevka-latin-400-italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Iosevka";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/iosevka/iosevka-latin-700-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Iosevka";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/iosevka/iosevka-latin-700-italic.woff2")
+    format("woff2");
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+code {
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  background: var(--code-bg);
+}
+
+pre {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  background: var(--code-bg);
+  border-radius: 3px;
+  line-height: 1.5;
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  font-size: 1em;
 }
 
 .highlight > pre,
 pre.highlight {
-  margin: 10px 0;
-  padding-left: 3px;
-  border: 1px solid #ccc;
+  margin: 1.25rem 0;
+  padding: 0.75rem 1rem;
   overflow-x: auto;
-  font-size: 18px;
-  text-indent: 0px;
-  background-color: #eee;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
-  font-family: 'CMU TypeWriter', monospace;
-  font-style: normal;
-}
-
-.highlighter-rouge {
-  font-family: 'CMU TypeWriter', monospace;
-  font-style: normal;
-  font-size: 18px;
-  background-color: #eee;
+  background: var(--code-bg);
 }

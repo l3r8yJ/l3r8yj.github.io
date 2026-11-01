@@ -3,5 +3,5 @@
 
 @charset "utf-8";
 
-@import 'reset', 'container', 'float', 'header', 'footer', 'page', 'post-list',
-  'post', 'highlighter', 'mobile', 'printer', 'task-list', 'mermaid', 'form', 'dark';
+@import 'reset', 'layout', 'page', 'post-list', 'post', 'highlighter',
+  'task-list', 'mermaid', 'form', 'printer', 'dark';

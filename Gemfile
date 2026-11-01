@@ -18,6 +18,7 @@ source "https://rubygems.org"
 gem "jekyll-github-metadata"
 gem "webrick"
 gem "faraday-retry"
+gem "erb"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

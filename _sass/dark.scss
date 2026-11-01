@@ -1,63 +1,22 @@
 @charset "utf-8";
 
+@mixin dark-palette {
+  color-scheme: dark;
+  --bg: #111111;
+  --fg: #e6e6e6;
+  --muted: #999999;
+  --rule: #333333;
+  --code-bg: #1b1b1b;
+  --code-string: #b0b0b0;
+  --code-comment: #888888;
+}
+
 @media (prefers-color-scheme: dark) {
-  html,
-  body {
-    background-color: #1c1a15;
-    color: #e2d9c5;
+  :root:not([data-theme="light"]) {
+    @include dark-palette;
   }
+}
 
-  a {
-    color: #c9b87a;
-  }
-
-  a:hover {
-    color: #8a7d56;
-  }
-
-  blockquote {
-    border-left-color: #5a5040;
-  }
-
-  hr {
-    border-color: #302c24;
-  }
-
-  tbody tr:hover {
-    background-color: #242018;
-  }
-
-  td {
-    border-bottom-color: #302c24;
-  }
-
-  th {
-    border-bottom-color: #3a3428;
-    background: #252018;
-  }
-
-  .container-header {
-    border-bottom-color: #3a3428;
-  }
-
-  .container-footer {
-    border-top-color: #3a3428;
-  }
-
-  input[type="text"] {
-    background-color: #252018;
-    color: #e2d9c5;
-    border-color: #3a3428;
-  }
-
-  input[type="text"]::placeholder {
-    color: #7a7060;
-  }
-
-  .highlight,
-  .highlighter-rouge pre.highlight,
-  code.highlighter-rouge {
-    background-color: #231f18;
-    border-color: #3a3428;
-  }
+:root[data-theme="dark"] {
+  @include dark-palette;
 }
