@@ -9,10 +9,9 @@
   --code-bg: #f4f4f4;
   --code-string: #555555;
   --code-comment: #777777;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
   --font-mono: "Iosevka", ui-monospace, SFMono-Regular, Menlo, Consolas,
     "Liberation Mono", monospace;
+  --font-sans: var(--font-mono);
 }
 
 *,
