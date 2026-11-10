@@ -6,6 +6,10 @@ last_modified_at: '2026-01-11'
 categories:
   - career
 tags:
+  - career
+  - burnout
+  - programming
+  - opinion
 ---
 To be honest, I have no idea how to start such posts. When I was studying at university, there was an idea in my head. It was about "where I have to be in 1–1.5 years" (as a software developer).
 
