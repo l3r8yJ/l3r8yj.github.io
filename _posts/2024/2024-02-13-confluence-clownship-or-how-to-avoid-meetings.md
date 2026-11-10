@@ -1,6 +1,7 @@
 ---
 title: Confluence clownship or How to avoid meetings and DTOs?
 layout: post
+description: "How badly written Confluence documentation wastes developer time, and what to do instead of another pointless meeting."
 date: '2024-02-13'
 last_modified_at: '2024-02-16'
 categories:

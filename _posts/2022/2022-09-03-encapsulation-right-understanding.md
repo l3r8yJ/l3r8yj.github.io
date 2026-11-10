@@ -1,6 +1,7 @@
 ---
 title: A proper understanding of encapsulation
 layout: post
+description: "What encapsulation really means in object-oriented design and why getters, setters and configuration-through-setters miss the point."
 date: '2022-09-03'
 last_modified_at: '2022-09-03'
 categories:

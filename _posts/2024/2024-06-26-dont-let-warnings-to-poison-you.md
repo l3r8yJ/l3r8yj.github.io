@@ -1,6 +1,7 @@
 ---
 title: Don't let warnings to poison you
 layout: post
+description: "What happens when a team starts rejecting code with a linter, and why warnings deserve attention before they poison the build."
 date: '2024-06-26'
 last_modified_at: '2024-06-26'
 categories:

@@ -1,6 +1,7 @@
 ---
 title: Tester, make the lives of those around you better
 layout: post
+description: "How testers can make life better for analysts, developers and the whole team by communicating problems early."
 date: '2025-04-22'
 last_modified_at: '2026-10-09'
 categories:

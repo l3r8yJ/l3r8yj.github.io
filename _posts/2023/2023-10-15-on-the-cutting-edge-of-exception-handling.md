@@ -1,6 +1,7 @@
 ---
 title: On the cutting edge of exception handling
 layout: post
+description: "Exception handling in Spring applications: what goes wrong with common approaches and how to design clearer error flows."
 date: '2023-10-15'
 last_modified_at: '2023-10-19'
 categories:

@@ -1,6 +1,7 @@
 ---
 title: How to become a lost
 layout: post
+description: "A personal story about burnout, non-stop career chasing, losing joy in programming and finding it again through a project I love."
 date: '2026-01-11'
 last_modified_at: '2026-01-11'
 categories:

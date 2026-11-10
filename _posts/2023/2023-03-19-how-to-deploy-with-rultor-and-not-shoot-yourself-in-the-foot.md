@@ -1,6 +1,7 @@
 ---
 title: How to deploy with Rultor and not shoot yourself in the leg
 layout: post
+description: "How to configure Rultor deployment so releases run safely without breaking the pipeline or the project."
 date: '2023-03-19'
 last_modified_at: '2023-03-24'
 categories:

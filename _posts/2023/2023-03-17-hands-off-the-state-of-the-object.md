@@ -1,6 +1,7 @@
 ---
 title: Hands off the state of the object
 layout: post
+description: "Why mutable object state and setters hurt design, and how to build immutable objects without configuration through setters."
 date: '2023-03-17'
 last_modified_at: '2023-03-19'
 categories:

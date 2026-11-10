@@ -1,6 +1,7 @@
 ---
 title: Docker fix for my enviroment
 layout: post
+description: "A quick fix for running Spring tests in Docker on Apple M-series processors when the container environment fails to start."
 date: '2023-11-24'
 last_modified_at: '2023-11-24'
 categories:

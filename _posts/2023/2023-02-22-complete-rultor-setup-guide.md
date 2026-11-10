@@ -1,6 +1,7 @@
 ---
 title: Сomplete (almost) guide to setup Rultor
 layout: post
+description: "A step-by-step guide to setting up Rultor for automated pull request merging and releases in a GitHub project."
 date: '2023-02-22'
 last_modified_at: '2023-02-22'
 categories:

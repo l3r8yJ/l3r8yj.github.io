@@ -1,6 +1,7 @@
 ---
 title: Testing role model with Spring Boot
 layout: post
+description: "How we tested a Spring Boot role model with complex role-dependent business logic without drowning the tests in mocks."
 date: '2024-05-24'
 last_modified_at: '2024-05-24'
 categories:

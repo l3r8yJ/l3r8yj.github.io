@@ -1,6 +1,7 @@
 ---
 title: IU-chain testing
 layout: post
+description: "IU-chain testing: chaining integration tests with unit tests to keep builds fast and bug localization precise."
 date: '2025-05-15'
 last_modified_at: '2025-05-15'
 categories:

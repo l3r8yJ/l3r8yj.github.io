@@ -1,6 +1,7 @@
 ---
 title: How to get started in software development
 layout: post
+description: "Practical advice for getting started in software development: what to learn, what to ignore and which traps to avoid."
 date: '2023-04-03'
 last_modified_at: '2023-06-30'
 categories:

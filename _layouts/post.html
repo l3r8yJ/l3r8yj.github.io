@@ -44,8 +44,15 @@ layout: default
   <div class="post-content">
     {{ content }}
   </div>
+  {% assign share_url = page.url | absolute_url %}
+  {% assign share_url_encoded = share_url | url_encode %}
+  {% assign share_title = page.title | url_encode %}
   <div class="post-actions">
-    <a href="https://news.ycombinator.com/submit">Submit to Hacker News</a>
+    <a href="https://news.ycombinator.com/submitlink?u={{ share_url_encoded }}&amp;t={{ share_title }}" target="_blank" rel="noopener">Hacker News</a>
+    <a href="https://twitter.com/intent/tweet?url={{ share_url_encoded }}&amp;text={{ share_title }}" target="_blank" rel="noopener">X</a>
+    <a href="https://bsky.app/intent/compose?text={{ share_title }}%20{{ share_url_encoded }}" target="_blank" rel="noopener">Bluesky</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url_encoded }}" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.reddit.com/submit?url={{ share_url_encoded }}&amp;title={{ share_title }}" target="_blank" rel="noopener">Reddit</a>
   </div>
   <nav class="post-nav">
     {% if page.previous %}

@@ -1,6 +1,7 @@
 ---
 title: Don't be shy – cry!
 layout: post
+description: "How to reduce legacy code pain by reading code carefully, reporting problems and improving quality instead of quietly suffering."
 date: '2023-08-06'
 last_modified_at: '2023-08-06'
 categories:

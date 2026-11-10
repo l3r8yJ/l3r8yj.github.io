@@ -1,6 +1,7 @@
 ---
 title: My work environment.
 layout: post
+description: "A tour of my daily development environment: the computer, editor, terminal and tools I use to write code every day."
 date: '2023-02-21'
 last_modified_at: '2023-04-19'
 categories:

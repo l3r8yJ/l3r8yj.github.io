@@ -1,6 +1,7 @@
 ---
 title: An elegant way to write Singleton in Java
 layout: post
+description: "An elegant, thread-safe way to implement the Singleton pattern in Java, and the trade-offs behind it."
 date: '2023-03-31'
 last_modified_at: '2023-03-31'
 categories:

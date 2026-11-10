@@ -1,6 +1,7 @@
 ---
 title: How to make students suffer
 layout: post
+description: "Thoughts on higher education and how it makes students suffer, written while project dependencies loaded for 15 minutes."
 date: '2023-06-05'
 last_modified_at: '2023-06-05'
 categories:

@@ -1,6 +1,7 @@
 ---
 title: How to develop un-analyzable PL 
 layout: post
+description: "How to design a programming language that defeats every static analyzer, and why quality control still matters."
 date: '2023-02-27'
 last_modified_at: '2022-03-05'
 categories:
